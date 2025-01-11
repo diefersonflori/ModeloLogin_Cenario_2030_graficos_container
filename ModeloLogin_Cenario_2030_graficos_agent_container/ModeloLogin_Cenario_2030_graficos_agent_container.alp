@@ -487,7 +487,7 @@ Cria_Comboio.inject();
 				<Variable Class="Parameter">
 					<Id>1736454250309</Id>
 					<Name><![CDATA[quantidade_de_comboios]]></Name>
-					<X>-160</X><Y>1770</Y>
+					<X>-170</X><Y>1760</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
