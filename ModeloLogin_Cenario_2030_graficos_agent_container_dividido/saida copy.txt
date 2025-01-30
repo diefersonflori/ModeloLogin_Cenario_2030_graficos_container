@@ -1,0 +1,147 @@
+Apos Carga -- carregay 0- tempo: 176.33333333333402
+APOS CARGA-capacidade- 72 a bordo -0
+Apos Carga -- carregay 1- tempo: 176.66666666666737
+APOS CARGA-capacidade- 72 a bordo -1
+Apos Carga -- carregay 2- tempo: 177.0000000000007
+APOS CARGA-capacidade- 72 a bordo -2
+Apos Carga -- carregay 3- tempo: 177.33333333333405
+APOS CARGA-capacidade- 72 a bordo -3
+Apos Carga -- carregay 4- tempo: 177.6666666666674
+APOS CARGA-capacidade- 72 a bordo -4
+Apos Carga -- carregay 5- tempo: 178.00000000000074
+APOS CARGA-capacidade- 72 a bordo -5
+Apos Carga -- carregay 6- tempo: 178.33333333333408
+APOS CARGA-capacidade- 72 a bordo -6
+Apos Carga -- carregay 7- tempo: 178.66666666666742
+APOS CARGA-capacidade- 72 a bordo -7
+Apos Carga -- carregay 8- tempo: 179.00000000000077
+APOS CARGA-capacidade- 72 a bordo -8
+Apos Carga -- carregay 9- tempo: 179.3333333333341
+APOS CARGA-capacidade- 72 a bordo -9
+Apos Carga -- carregay 10- tempo: 179.66666666666745
+APOS CARGA-capacidade- 72 a bordo -10
+Apos Carga -- carregay 11- tempo: 180.0000000000008
+APOS CARGA-capacidade- 72 a bordo -11
+Apos Carga -- carregay 12- tempo: 180.33333333333414
+APOS CARGA-capacidade- 72 a bordo -12
+Apos Carga -- carregay 13- tempo: 180.66666666666748
+APOS CARGA-capacidade- 72 a bordo -13
+Apos Carga -- carregay 14- tempo: 181.00000000000082
+APOS CARGA-capacidade- 72 a bordo -14
+Apos Carga -- carregay 15- tempo: 181.33333333333417
+APOS CARGA-capacidade- 72 a bordo -15
+Apos Carga -- carregay 16- tempo: 181.6666666666675
+APOS CARGA-capacidade- 72 a bordo -16
+Apos Carga -- carregay 17- tempo: 182.00000000000085
+APOS CARGA-capacidade- 72 a bordo -17
+Apos Carga -- carregay 18- tempo: 182.3333333333342
+APOS CARGA-capacidade- 72 a bordo -18
+Apos Carga -- carregay 19- tempo: 182.66666666666754
+APOS CARGA-capacidade- 72 a bordo -19
+Apos Carga -- carregay 20- tempo: 183.00000000000088
+APOS CARGA-capacidade- 72 a bordo -20
+Apos Carga -- carregay 21- tempo: 183.33333333333422
+APOS CARGA-capacidade- 72 a bordo -21
+Apos Carga -- carregay 22- tempo: 183.66666666666757
+APOS CARGA-capacidade- 72 a bordo -22
+Apos Carga -- carregay 23- tempo: 184.0000000000009
+APOS CARGA-capacidade- 72 a bordo -23
+Apos Carga -- carregay 24- tempo: 184.33333333333425
+APOS CARGA-capacidade- 72 a bordo -24
+Apos Carga -- carregay 25- tempo: 184.6666666666676
+APOS CARGA-capacidade- 72 a bordo -25
+Apos Carga -- carregay 26- tempo: 185.00000000000094
+APOS CARGA-capacidade- 72 a bordo -26
+Apos Carga -- carregay 27- tempo: 185.33333333333428
+APOS CARGA-capacidade- 72 a bordo -27
+Apos Carga -- carregay 28- tempo: 185.66666666666762
+APOS CARGA-capacidade- 72 a bordo -28
+Apos Carga -- carregay 29- tempo: 186.00000000000097
+APOS CARGA-capacidade- 72 a bordo -29
+Apos Carga -- carregay 30- tempo: 186.3333333333343
+APOS CARGA-capacidade- 72 a bordo -30
+Apos Carga -- carregay 31- tempo: 186.66666666666765
+APOS CARGA-capacidade- 72 a bordo -31
+Apos Carga -- carregay 32- tempo: 187.000000000001
+APOS CARGA-capacidade- 72 a bordo -32
+Apos Carga -- carregay 33- tempo: 187.33333333333434
+APOS CARGA-capacidade- 72 a bordo -33
+Apos Carga -- carregay 34- tempo: 187.66666666666768
+APOS CARGA-capacidade- 72 a bordo -34
+Apos Carga -- carregay 35- tempo: 188.00000000000102
+APOS CARGA-capacidade- 72 a bordo -35
+entrou pra aguardar carga= 188.00000000000102
+Saiu do aguardo carga= 209.7510483940882
+Apos Carga -- carregay 36- tempo: 210.08438172742154
+APOS CARGA-capacidade- 72 a bordo -36
+Apos Carga -- carregay 37- tempo: 210.4177150607549
+APOS CARGA-capacidade- 72 a bordo -37
+Apos Carga -- carregay 38- tempo: 210.75104839408823
+APOS CARGA-capacidade- 72 a bordo -38
+Apos Carga -- carregay 39- tempo: 211.08438172742157
+APOS CARGA-capacidade- 72 a bordo -39
+Apos Carga -- carregay 40- tempo: 211.41771506075492
+APOS CARGA-capacidade- 72 a bordo -40
+Apos Carga -- carregay 41- tempo: 211.75104839408826
+APOS CARGA-capacidade- 72 a bordo -41
+Apos Carga -- carregay 42- tempo: 212.0843817274216
+APOS CARGA-capacidade- 72 a bordo -42
+Apos Carga -- carregay 43- tempo: 212.41771506075494
+APOS CARGA-capacidade- 72 a bordo -43
+Apos Carga -- carregay 44- tempo: 212.7510483940883
+APOS CARGA-capacidade- 72 a bordo -44
+Apos Carga -- carregay 45- tempo: 213.08438172742163
+APOS CARGA-capacidade- 72 a bordo -45
+Apos Carga -- carregay 46- tempo: 213.41771506075497
+APOS CARGA-capacidade- 72 a bordo -46
+Apos Carga -- carregay 47- tempo: 213.75104839408831
+APOS CARGA-capacidade- 72 a bordo -47
+Apos Carga -- carregay 48- tempo: 214.08438172742166
+APOS CARGA-capacidade- 72 a bordo -48
+Apos Carga -- carregay 49- tempo: 214.417715060755
+APOS CARGA-capacidade- 72 a bordo -49
+Apos Carga -- carregay 50- tempo: 214.75104839408834
+APOS CARGA-capacidade- 72 a bordo -50
+Apos Carga -- carregay 51- tempo: 215.0843817274217
+APOS CARGA-capacidade- 72 a bordo -51
+Apos Carga -- carregay 52- tempo: 215.41771506075503
+APOS CARGA-capacidade- 72 a bordo -52
+Apos Carga -- carregay 53- tempo: 215.75104839408837
+APOS CARGA-capacidade- 72 a bordo -53
+Apos Carga -- carregay 54- tempo: 216.08438172742171
+APOS CARGA-capacidade- 72 a bordo -54
+Apos Carga -- carregay 55- tempo: 216.41771506075506
+APOS CARGA-capacidade- 72 a bordo -55
+Apos Carga -- carregay 56- tempo: 216.7510483940884
+APOS CARGA-capacidade- 72 a bordo -56
+Apos Carga -- carregay 57- tempo: 217.08438172742174
+APOS CARGA-capacidade- 72 a bordo -57
+Apos Carga -- carregay 58- tempo: 217.41771506075509
+APOS CARGA-capacidade- 72 a bordo -58
+Apos Carga -- carregay 59- tempo: 217.75104839408843
+APOS CARGA-capacidade- 72 a bordo -59
+Apos Carga -- carregay 60- tempo: 218.08438172742177
+APOS CARGA-capacidade- 72 a bordo -60
+Apos Carga -- carregay 61- tempo: 218.4177150607551
+APOS CARGA-capacidade- 72 a bordo -61
+Apos Carga -- carregay 62- tempo: 218.75104839408846
+APOS CARGA-capacidade- 72 a bordo -62
+Apos Carga -- carregay 63- tempo: 219.0843817274218
+APOS CARGA-capacidade- 72 a bordo -63
+Apos Carga -- carregay 64- tempo: 219.41771506075514
+APOS CARGA-capacidade- 72 a bordo -64
+Apos Carga -- carregay 65- tempo: 219.75104839408849
+APOS CARGA-capacidade- 72 a bordo -65
+Apos Carga -- carregay 66- tempo: 220.08438172742183
+APOS CARGA-capacidade- 72 a bordo -66
+Apos Carga -- carregay 67- tempo: 220.41771506075517
+APOS CARGA-capacidade- 72 a bordo -67
+Apos Carga -- carregay 68- tempo: 220.7510483940885
+APOS CARGA-capacidade- 72 a bordo -68
+Apos Carga -- carregay 69- tempo: 221.08438172742186
+APOS CARGA-capacidade- 72 a bordo -69
+Apos Carga -- carregay 70- tempo: 221.4177150607552
+APOS CARGA-capacidade- 72 a bordo -70
+Apos Carga -- carregay 71- tempo: 221.75104839408854
+APOS CARGA-capacidade- 72 a bordo -71
+entrou pra aguardar carga= 221.75104839408854

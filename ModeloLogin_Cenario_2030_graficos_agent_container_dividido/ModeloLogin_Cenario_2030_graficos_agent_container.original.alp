@@ -20,39 +20,25 @@
 		<ActiveObjectClass>
 			<Id>1734024203029</Id>
 			<Name><![CDATA[Main]]></Name>
-			<AdditionalClassCode><![CDATA[ClasseJAVALEGAL classeLegal= new ClasseJAVALEGAL();]]></AdditionalClassCode>
 			<Import><![CDATA[import com.anylogic.cloud.util.ThreadUtils;
 import com.anylogic.cloud.util.ThreadUtils;
 import com.anylogic.cloud.util.ThreadUtils;
 import javax.naming.SizeLimitExceededException;
-import javax.naming.SizeLimitExceededException;
-
-
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.text.DecimalFormat;]]></Import>
-			<StartupCode><![CDATA[//set_txOpManaus(nbGuindastes*12)anterior- antes de mudar
+import javax.naming.SizeLimitExceededException;]]></Import>
+			<StartupCode><![CDATA[//set_txOpManaus(nbGuindastes*12);anterior- antes de mudar
 // para conjuntos de containeres- 20 blocos cada 
 // embarcação
-traceln(gisRoute_NS_AM.length(METER));
-traceln(gisRouteBelem_NS.length(METER));
-traceln(gisRouteInicial.length(METER));
-traceln("Soma: "+ gisRoute_NS_AM.length(METER)+gisRouteBelem_NS.length(METER)+gisRouteInicial.length(METER));
 set_taxa_operacao_Manaus();
 //viewAreachart.navigateTo();
 //viewAreaChart_Tempos_Navios_bercos.navigateTo();
+
 for(int ii=0; ii<hUBs.size();ii++){
 	hUBs.get(ii).ID_BERCO=ii;
 	hUBs.get(ii).setLocation(collection_bercos.get(ii));
 	if(ii>1)
 	hUBs.get(ii).setRotation(45);
 }
-classeLegal.limparArquivo("saida");
-classeLegal.limparArquivo("saidaNAVIOS");
 
-
-//classeLegal.escreverSaida("AA2", "saida");
 taxas = selectFrom( tb_chegadas_comb ).list( tb_chegadas_comb.rate_ariving );
 quantidade_de_comboios=taxas.size();
 
@@ -2172,7 +2158,7 @@ for(int ii=0;ii< quantidade_de_comboios;ii++){
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[modelologin]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[marcar_tempos]]></ItemName>
+						<ItemName><![CDATA[tempos_containers]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
@@ -2195,7 +2181,7 @@ for(int ii=0;ii< quantidade_de_comboios;ii++){
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[modelologin]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[marcar_tempos]]></ItemName>
+						<ItemName><![CDATA[tempos_containers]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
@@ -2420,94 +2406,6 @@ tempo_modeloANO=anoAtual;
 					<Envelope>0.5</Envelope>
 					<Envelope>0.75</Envelope>
 				</Histogram2DData>
-    			<DataSet>
-					<Id>1738172734335</Id>
-					<Name><![CDATA[dataset_temp_bloc_LC]]></Name>
-					<X>3340</X><Y>120</Y>
-					<Label><X>15</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<AutoUpdate>false</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1738224000000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-					</RecurrenceCode>
-					<FreezeXAxis>false</FreezeXAxis>
-					<SamplesToKeep>100</SamplesToKeep>
-				</DataSet>
-    			<DataSet>
-					<Id>1738173370541</Id>
-					<Name><![CDATA[dataset_temp_bloc_CB]]></Name>
-					<X>3800</X><Y>120</Y>
-					<Label><X>15</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<AutoUpdate>false</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1738224000000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-					</RecurrenceCode>
-					<FreezeXAxis>false</FreezeXAxis>
-					<SamplesToKeep>100</SamplesToKeep>
-				</DataSet>
-    			<DataSet>
-					<Id>1738266504526</Id>
-					<Name><![CDATA[dataset_temp_viag_LC]]></Name>
-					<X>3300</X><Y>-120</Y>
-					<Label><X>15</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<AutoUpdate>false</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1738224000000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-					</RecurrenceCode>
-					<FreezeXAxis>false</FreezeXAxis>
-					<SamplesToKeep>100</SamplesToKeep>
-				</DataSet>
-    			<DataSet>
-					<Id>1738266539735</Id>
-					<Name><![CDATA[dataset_temp_viag_CB]]></Name>
-					<X>3800</X><Y>-100</Y>
-					<Label><X>15</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<AutoUpdate>false</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1738224000000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-					</RecurrenceCode>
-					<FreezeXAxis>false</FreezeXAxis>
-					<SamplesToKeep>100</SamplesToKeep>
-				</DataSet>
 			</AnalysisData>
 			<AgentLinks>
 				<AgentLink>
@@ -4060,14 +3958,11 @@ else{
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[movementType]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[self.MOVE_TRIP_TIME]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[tripTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[triangular(119,140)]]></Code>
+								<Code><![CDATA[exponential(2, 12, 2, 1)]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
 							</Value>
 						</Parameter>
@@ -4349,16 +4244,9 @@ for(int ii=0;ii<agent.blocos_a_bordoCB.size();ii++){
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[movementType]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[self.MOVE_TRIP_TIME]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[tripTime]]></Name>
-							<Value Class="CodeUnitValue">
-								<Code><![CDATA[0]]></Code>
-								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[setSpeed]]></Name>
@@ -4498,16 +4386,9 @@ for(int ii=0;ii<agent.blocos_a_bordoCB.size();ii++){
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[movementType]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[self.MOVE_TRIP_TIME]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[tripTime]]></Name>
-							<Value Class="CodeUnitValue">
-								<Code><![CDATA[0]]></Code>
-								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[setSpeed]]></Name>
@@ -4647,14 +4528,11 @@ for(int ii=0;ii<agent.blocos_a_bordoCB.size();ii++){
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[movementType]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[self.MOVE_TRIP_TIME]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[tripTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[triangular(216,238)]]></Code>
+								<Code><![CDATA[exponential(2, 12, 2, 1)]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
 							</Value>
 						</Parameter>
@@ -4996,16 +4874,9 @@ oval_ocupado3.setFillColor(Color.GREEN);
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[movementType]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[self.MOVE_TRIP_TIME]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[tripTime]]></Name>
-							<Value Class="CodeUnitValue">
-								<Code><![CDATA[0]]></Code>
-								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[setSpeed]]></Name>
@@ -5145,16 +5016,9 @@ oval_ocupado3.setFillColor(Color.GREEN);
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[movementType]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[self.MOVE_TRIP_TIME]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[tripTime]]></Name>
-							<Value Class="CodeUnitValue">
-								<Code><![CDATA[0]]></Code>
-								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[setSpeed]]></Name>
@@ -5594,6 +5458,55 @@ for(int ii=0;ii< agent.blocos_a_bordoLC.size();ii++){
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[statistics_T_NAVIO.add(time()- agent.tempo_entrou_sistema);
+data_T_NAVIO.add(time()- agent.tempo_entrou_sistema);
+
+DataItem di= new DataItem();
+di.setValue( time()- agent.tempo_entrou_sistema);
+if(agent.type_vessel==0){
+	traceln("NavioLC, entrou: "+agent.tempo_entrou_sistema+"- saiu: "+time()+" total: "+di);
+}else{
+traceln("NavioCB, entrou: "+agent.tempo_entrou_sistema+"- saiu: "+time()+" total: "+di);
+}
+
+String ss;//format(plainTransfer_final_navio.count());
+
+if((grafico_ultimo_ano &&  time() >= 17661)||
+ !grafico_ultimo_ano ){
+	if(agent.berco_atracado==0){//B1
+	
+		if(agent.type_vessel==0){//LC
+			ss= format(quant_Nav_LC);
+			chartbar_Tempo_LC_B1.addDataItem(di, ss, Color.blue);
+		}
+		else{//CB	
+			ss= format(quant_Nav_CB);
+			chartbar_Tempo_CB_B1.addDataItem(di, ss, Color.red);
+		}
+	
+	}else{//B2
+	
+		if(agent.type_vessel==0){//LC
+			ss= format(quant_Nav_LC);
+			chartbar_Tempo_LC_B2.addDataItem(di, ss, Color.blue);
+		}
+		else{//CB	
+			ss= format(quant_Nav_CB);
+			chartbar_Tempo_CB_B2.addDataItem(di, ss, Color.red);
+		}
+	
+	}
+}
+//datasetNavio_dados.add(plainTransfer_final_navio.count(), time()- agent.tempo_entrou_sistema);
+//DataItem dataItem = new DataItem(String.valueOf(plainTransfer_final_navio.count()), time()- agent.tempo_entrou_sistema);
+/*
+ di= new DataItem();
+di.setValue(PatioSaida);
+chartbar_containers_patio.addDataItem(di, ss, Color.red);
+*/
+]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
@@ -10590,7 +10503,7 @@ aux_list++;]]></Code>
 				</EmbeddedObject>
 				<EmbeddedObject>
 					<Id>1737427481617</Id>
-					<Name><![CDATA[marcar_tempos]]></Name>
+					<Name><![CDATA[tempos_containers]]></Name>
 					<X>3670</X><Y>400</Y>
 					<Label><X>-35</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -10611,37 +10524,29 @@ aux_list++;]]></Code>
 						<Parameter>
 							<Name><![CDATA[onAtEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[double tempo_viagem=0;
-double tempo_total_blocos=0;
-tempo_total_blocos=agent.blocos_a_bordo.getLast().instante_A_BORDO_NAVIO_HUB-
-agent.blocos_a_bordo.get(0).instante_A_BORDO_BARC_AM;
-/*
-traceln("=============DIVISAO===========");
-classeLegal.escreverSaida("=============DIVISAO===========","saida");
-classeLegal.escreverSaida("=============ValorTViagem=========== "+tempo_total_blocos,"saida");
-*/
+								<Code><![CDATA[traceln("tempo em que terminou o ultimo bloco no navio-"+agent.instante_Ultimo_Bloco_A_BORDO_NAVIO_HUB);
+traceln("tempodo conj bloco até o navio-"+(agent.instante_Ultimo_Bloco_A_BORDO_NAVIO_HUB-
+agent.blocos_a_bordo.get(0).instante_A_BORDO_BARC_AM));
+traceln("tempos de cada bloco");
+double tempo_viagem=0;
+
 for(int ii=0; ii< agent.blocos_a_bordo.size();ii++){
-/*
 	traceln("Bl_"+ii+", COmboio -" +agent.blocos_a_bordo.get(ii).variable_ID_Comboio+": AM-"+agent.blocos_a_bordo.get(ii).instante_A_BORDO_BARC_AM+
 	" Chegou HUB-"+agent.blocos_a_bordo.get(ii).instante_Chega_BARC_HUB +" HUB-"+agent.blocos_a_bordo.get(ii).instante_A_BORDO_NAVIO_HUB);
 	
-	classeLegal.escreverSaida("Bl_"+ii+", COmboio -" +
-	agent.blocos_a_bordo.get(ii).variable_ID_Comboio+
-	": AM-"+agent.blocos_a_bordo.get(ii).instante_A_BORDO_BARC_AM+
-	" Chegou HUB-"+agent.blocos_a_bordo.get(ii).instante_Chega_BARC_HUB +
-	" HUB-"+agent.blocos_a_bordo.get(ii).instante_A_BORDO_NAVIO_HUB, "saida");
-	*/
 	tempo_viagem+=(agent.blocos_a_bordo.get(ii).instante_Chega_BARC_HUB-
 	agent.blocos_a_bordo.get(ii).instante_A_BORDO_BARC_AM);
 }
-//tempo de viagem
 tempo_viagem=tempo_viagem/agent.blocos_a_bordo.size();
+//tempo de viagem
+
 
 DataItem di= new DataItem();
-di.setValue(tempo_total_blocos);
+di.setValue( agent.instante_Ultimo_Bloco_A_BORDO_NAVIO_HUB-
+agent.blocos_a_bordo.get(0).instante_A_BORDO_BARC_AM);
 
 String ss;
-grafico_ultimo_ano=true;
+
 if((grafico_ultimo_ano &&  time() >= 17661)||
  !grafico_ultimo_ano ){
 	if(agent.type_vessel==0){//LC
@@ -10658,12 +10563,6 @@ if((grafico_ultimo_ano &&  time() >= 17661)||
 	DataItem d2= new DataItem();
 	d2.setValue( tempo_viagem);
 	chartbar_Tempo_viagem.addDataItem(d2, ss, Color.green);
-	if(agent.type_vessel==0){
-		dataset_temp_bloc_LC.add(quant_Nav_LC, tempo_total_blocos);
-		}
-	else{
-		dataset_temp_bloc_CB.add(quant_Nav_CB, tempo_total_blocos);
-	}
 
 }
 ]]></Code>
@@ -10719,7 +10618,7 @@ if((grafico_ultimo_ano &&  time() >= 17661)||
 				<Rectangle>
 					<Id>1737463801897</Id>
 					<Name><![CDATA[rectangle56]]></Name>
-					<X>2980</X><Y>-320</Y>
+					<X>3000</X><Y>-320</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -10732,7 +10631,7 @@ if((grafico_ultimo_ano &&  time() >= 17661)||
 					<LineColor>-16777216</LineColor>
 					<LineMaterial>null</LineMaterial>
 					<LineStyle>SOLID</LineStyle>
-					<Width>940</Width>
+					<Width>920</Width>
 					<Height>540</Height>
 					<Rotation>0.0</Rotation>
 					<FillColor>-4144960</FillColor>
@@ -15261,10 +15160,128 @@ hUBs.get(3).carregadobLC+hUBs.get(2).carregadobLC)]]></TextCode>
 					</Font>
 					<Alignment>LEFT</Alignment>
 				</Text>
+    			<BarChart>
+					<Id>1737434975919</Id>
+					<Name><![CDATA[chartbar_Tempo_LC_Total]]></Name>
+					<X>3040</X><Y>-240</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1736409600000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<DataItem>
+					<Id>1737434975916</Id>
+					<Expression><![CDATA[0]]></Expression>
+					<Color>-60269</Color>
+						<Title><![CDATA[chartbar_Tempo_LC_Total]]></Title>
+					</DataItem>
+					<ScaleFromExpression><![CDATA[0]]></ScaleFromExpression>
+					<ScaleToExpression><![CDATA[1]]></ScaleToExpression>
+					<ScaleType>AUTO</ScaleType>
+					<Bars>
+						<Direction>UP</Direction>
+						<RelativeWidth>0.74</RelativeWidth>
+					</Bars>
+    			</BarChart>
+    			<BarChart>
+					<Id>1737434975924</Id>
+					<Name><![CDATA[chartbar_Tempo_CB_Total]]></Name>
+					<X>3500</X><Y>-240</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1736409600000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<DataItem>
+					<Id>1737434975921</Id>
+					<Expression><![CDATA[0]]></Expression>
+					<Color>-60269</Color>
+						<Title><![CDATA[chartbar_Tempo_CB_Total]]></Title>
+					</DataItem>
+					<ScaleFromExpression><![CDATA[0]]></ScaleFromExpression>
+					<ScaleToExpression><![CDATA[1]]></ScaleToExpression>
+					<ScaleType>AUTO</ScaleType>
+					<Bars>
+						<Direction>UP</Direction>
+						<RelativeWidth>0.74</RelativeWidth>
+					</Bars>
+    			</BarChart>
 				<Text>
 					<Id>1737434975926</Id>
 					<Name><![CDATA[text15]]></Name>
-					<X>3020</X><Y>-260</Y>
+					<X>3060</X><Y>-260</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -15274,7 +15291,7 @@ hUBs.get(3).carregadobLC+hUBs.get(2).carregadobLC)]]></TextCode>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[Tempo de Viagem]]></Text>
+					<Text><![CDATA[Tempo Bloco Longo Curso]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>28</Size>
@@ -15285,7 +15302,87 @@ hUBs.get(3).carregadobLC+hUBs.get(2).carregadobLC)]]></TextCode>
 				<Text>
 					<Id>1737434975928</Id>
 					<Name><![CDATA[text16]]></Name>
-					<X>3500</X><Y>-260</Y>
+					<X>3520</X><Y>-260</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Tempo Bloco Cabotagem]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>28</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+    			<BarChart>
+					<Id>1737436122247</Id>
+					<Name><![CDATA[chartbar_Tempo_viagem]]></Name>
+					<X>3040</X><Y>0</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1736409600000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<DataItem>
+					<Id>1737436122244</Id>
+					<Expression><![CDATA[0]]></Expression>
+					<Color>-60269</Color>
+						<Title><![CDATA[chartbar_Tempo_viagem]]></Title>
+					</DataItem>
+					<ScaleFromExpression><![CDATA[0]]></ScaleFromExpression>
+					<ScaleToExpression><![CDATA[1]]></ScaleToExpression>
+					<ScaleType>AUTO</ScaleType>
+					<Bars>
+						<Direction>UP</Direction>
+						<RelativeWidth>0.74</RelativeWidth>
+					</Bars>
+    			</BarChart>
+				<Text>
+					<Id>1737436126069</Id>
+					<Name><![CDATA[text17]]></Name>
+					<X>3020</X><Y>-20</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -15327,422 +15424,6 @@ hUBs.get(3).carregadobLC+hUBs.get(2).carregadobLC)]]></TextCode>
 						<Determinate><![CDATA[true]]></Determinate>
 					</ExtendedProperties>
 				</Control>
-    			<Plot>
-					<Id>1738172617584</Id>
-					<Name><![CDATA[plot1]]></Name>
-					<X>3020</X><Y>0</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AutoUpdate>true</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1738224000000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-					</RecurrenceCode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>260</Width>
-					<Height>210</Height>
-					<BackgroundColor/>
-					<BorderColor/>
-					<ChartArea>
-						<XOffset>50</XOffset>
-						<YOffset>30</YOffset>
-						<Width>180</Width>
-						<Height>120</Height>
-						<BackgroundColor>-1</BackgroundColor>
-						<BorderColor>-16777216</BorderColor>
-						<GridColor>-12566464</GridColor>
-					</ChartArea>
-					<Legend>
-						<Place>SOUTH</Place>
-						<TextColor>-16777216</TextColor>
-						<Size>30</Size>
-					</Legend>
-					<Labels>
-						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
-						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
-						<TextColor>-12566464</TextColor>
-					</Labels>
-					<ShowLegend>true</ShowLegend>
-					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
-					<VerScaleType>AUTO</VerScaleType>
-					<DrawLine>true</DrawLine>
-					<Interpolation>LINEAR</Interpolation>
-					<DatasetExpression>  
-						<Title><![CDATA[Title]]></Title>
-					<Id>1738172619232</Id>
-					<Expression><![CDATA[dataset_temp_bloc_LC]]></Expression>
-					<Color>-16776961</Color>
-					<Expression2><![CDATA[0]]></Expression2>
-					<Expression2Flag>false</Expression2Flag>
-						<PointStyle>CIRCLE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-						<HorizontalAxisExpression><![CDATA[0]]></HorizontalAxisExpression>
-					</DatasetExpression>
-					<SamplesToKeep>100</SamplesToKeep>
-					<HorScaleFromExpression><![CDATA[0]]></HorScaleFromExpression>
-					<HorScaleToExpression><![CDATA[1]]></HorScaleToExpression>
-					<HorScaleType>AUTO</HorScaleType>
-    			</Plot>
-    			<Plot>
-					<Id>1738173370526</Id>
-					<Name><![CDATA[plot2]]></Name>
-					<X>3480</X><Y>0</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AutoUpdate>true</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1738224000000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-					</RecurrenceCode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>260</Width>
-					<Height>210</Height>
-					<BackgroundColor/>
-					<BorderColor/>
-					<ChartArea>
-						<XOffset>50</XOffset>
-						<YOffset>30</YOffset>
-						<Width>180</Width>
-						<Height>120</Height>
-						<BackgroundColor>-1</BackgroundColor>
-						<BorderColor>-16777216</BorderColor>
-						<GridColor>-12566464</GridColor>
-					</ChartArea>
-					<Legend>
-						<Place>SOUTH</Place>
-						<TextColor>-16777216</TextColor>
-						<Size>30</Size>
-					</Legend>
-					<Labels>
-						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
-						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
-						<TextColor>-12566464</TextColor>
-					</Labels>
-					<ShowLegend>true</ShowLegend>
-					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
-					<VerScaleType>AUTO</VerScaleType>
-					<DrawLine>true</DrawLine>
-					<Interpolation>LINEAR</Interpolation>
-					<DatasetExpression>  
-						<Title><![CDATA[Title]]></Title>
-					<Id>1738173370523</Id>
-					<Expression><![CDATA[dataset_temp_bloc_LC]]></Expression>
-					<Color>-16776961</Color>
-					<Expression2><![CDATA[0]]></Expression2>
-					<Expression2Flag>false</Expression2Flag>
-						<PointStyle>CIRCLE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-						<HorizontalAxisExpression><![CDATA[0]]></HorizontalAxisExpression>
-					</DatasetExpression>
-					<SamplesToKeep>100</SamplesToKeep>
-					<HorScaleFromExpression><![CDATA[0]]></HorScaleFromExpression>
-					<HorScaleToExpression><![CDATA[1]]></HorScaleToExpression>
-					<HorScaleType>AUTO</HorScaleType>
-    			</Plot>
-    			<Plot>
-					<Id>1738266983090</Id>
-					<Name><![CDATA[plot3]]></Name>
-					<X>3020</X><Y>-220</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AutoUpdate>true</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1738224000000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-					</RecurrenceCode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>260</Width>
-					<Height>210</Height>
-					<BackgroundColor/>
-					<BorderColor/>
-					<ChartArea>
-						<XOffset>50</XOffset>
-						<YOffset>30</YOffset>
-						<Width>180</Width>
-						<Height>120</Height>
-						<BackgroundColor>-1</BackgroundColor>
-						<BorderColor>-16777216</BorderColor>
-						<GridColor>-12566464</GridColor>
-					</ChartArea>
-					<Legend>
-						<Place>SOUTH</Place>
-						<TextColor>-16777216</TextColor>
-						<Size>30</Size>
-					</Legend>
-					<Labels>
-						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
-						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
-						<TextColor>-12566464</TextColor>
-					</Labels>
-					<ShowLegend>true</ShowLegend>
-					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
-					<VerScaleType>AUTO</VerScaleType>
-					<DrawLine>true</DrawLine>
-					<Interpolation>LINEAR</Interpolation>
-					<DatasetExpression>  
-						<Title><![CDATA[Title]]></Title>
-					<Id>1738266983087</Id>
-					<Expression><![CDATA[dataset_temp_bloc_LC]]></Expression>
-					<Color>-65536</Color>
-					<Expression2><![CDATA[0]]></Expression2>
-					<Expression2Flag>false</Expression2Flag>
-						<PointStyle>CIRCLE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-						<HorizontalAxisExpression><![CDATA[0]]></HorizontalAxisExpression>
-					</DatasetExpression>
-					<SamplesToKeep>100</SamplesToKeep>
-					<HorScaleFromExpression><![CDATA[0]]></HorScaleFromExpression>
-					<HorScaleToExpression><![CDATA[1]]></HorScaleToExpression>
-					<HorScaleType>AUTO</HorScaleType>
-    			</Plot>
-    			<Plot>
-					<Id>1738266983095</Id>
-					<Name><![CDATA[plot4]]></Name>
-					<X>3480</X><Y>-220</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AutoUpdate>true</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1738224000000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-					</RecurrenceCode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>260</Width>
-					<Height>210</Height>
-					<BackgroundColor/>
-					<BorderColor/>
-					<ChartArea>
-						<XOffset>50</XOffset>
-						<YOffset>30</YOffset>
-						<Width>180</Width>
-						<Height>120</Height>
-						<BackgroundColor>-1</BackgroundColor>
-						<BorderColor>-16777216</BorderColor>
-						<GridColor>-12566464</GridColor>
-					</ChartArea>
-					<Legend>
-						<Place>SOUTH</Place>
-						<TextColor>-16777216</TextColor>
-						<Size>30</Size>
-					</Legend>
-					<Labels>
-						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
-						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
-						<TextColor>-12566464</TextColor>
-					</Labels>
-					<ShowLegend>true</ShowLegend>
-					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
-					<VerScaleType>AUTO</VerScaleType>
-					<DrawLine>true</DrawLine>
-					<Interpolation>LINEAR</Interpolation>
-					<DatasetExpression>  
-						<Title><![CDATA[Title]]></Title>
-					<Id>1738266983092</Id>
-					<Expression><![CDATA[dataset_temp_bloc_LC]]></Expression>
-					<Color>-65536</Color>
-					<Expression2><![CDATA[0]]></Expression2>
-					<Expression2Flag>false</Expression2Flag>
-						<PointStyle>CIRCLE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-						<HorizontalAxisExpression><![CDATA[0]]></HorizontalAxisExpression>
-					</DatasetExpression>
-					<SamplesToKeep>100</SamplesToKeep>
-					<HorScaleFromExpression><![CDATA[0]]></HorScaleFromExpression>
-					<HorScaleToExpression><![CDATA[1]]></HorScaleToExpression>
-					<HorScaleType>AUTO</HorScaleType>
-    			</Plot>
-				<Text>
-					<Id>1738267183351</Id>
-					<Name><![CDATA[text17]]></Name>
-					<X>3020</X><Y>-20</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Tempo Bloco]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>28</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-				<Text>
-					<Id>1738267183353</Id>
-					<Name><![CDATA[text18]]></Name>
-					<X>3500</X><Y>-20</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Tempo Bloco]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>28</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-				<Rectangle>
-					<Id>1738267331301</Id>
-					<Name><![CDATA[rectangle58]]></Name>
-					<X>3460</X><Y>-320</Y>
-					<Label><X>10</X><Y>10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<Width>440</Width>
-					<Height>60</Height>
-					<Rotation>0.0</Rotation>
-					<FillColor>-16711936</FillColor>
-					<FillMaterial>null</FillMaterial>
-				</Rectangle>
-				<Text>
-					<Id>1738267241555</Id>
-					<Name><![CDATA[text20]]></Name>
-					<X>3520</X><Y>-310</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[CABOTAGEM]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>36</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-				<Rectangle>
-					<Id>1738267308094</Id>
-					<Name><![CDATA[rectangle57]]></Name>
-					<X>3000</X><Y>-320</Y>
-					<Label><X>10</X><Y>10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<Width>440</Width>
-					<Height>60</Height>
-					<Rotation>0.0</Rotation>
-					<FillColor>-16711936</FillColor>
-					<FillMaterial>null</FillMaterial>
-				</Rectangle>
-				<Text>
-					<Id>1738267241553</Id>
-					<Name><![CDATA[text19]]></Name>
-					<X>3040</X><Y>-310</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[LONGO CURSO]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>36</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-				<Line>
-					<Id>1738267453388</Id>
-					<Name><![CDATA[line1]]></Name>
-					<X>3450</X><Y>220</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<BeginArrowSize>1</BeginArrowSize>
-					<BeginArrowStyle>0</BeginArrowStyle>
-					<EndArrowSize>1</EndArrowSize>
-					<EndArrowStyle>0</EndArrowStyle>
-					<Dx>0</Dx>
-					<Dy>-540</Dy>
-					<Dz>0</Dz>
-				</Line>
 			</Presentation>
 
 				</Level>
@@ -15790,18 +15471,6 @@ hUBs.get(3).carregadobLC+hUBs.get(2).carregadobLC)]]></TextCode>
 					<Width>840</Width>
 					<Height>540</Height>
 				</Area>
-				<Area>
-					<Id>1738247240828</Id>
-					<Name><![CDATA[viewArea_tempos_blocos]]></Name>
-					<X>2980</X><Y>-320</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<Title><![CDATA[]]></Title>
-					<Width>940</Width>
-					<Height>540</Height>
-				</Area>
 			</Areas>
 
 		</ActiveObjectClass>
@@ -15809,11 +15478,6 @@ hUBs.get(3).carregadobLC+hUBs.get(2).carregadobLC)]]></TextCode>
 		<ActiveObjectClass>
 			<Id>1734352745444</Id>
 			<Name><![CDATA[AgentBerco]]></Name>
-			<Import><![CDATA[import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.Collection;
-import org.opengis.metadata.distribution.Distribution;]]></Import>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1734352745450</Id>
@@ -16066,21 +15730,6 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						</InitialValue>
 					</Properties>
 				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1738245623795</Id>
-					<Name><![CDATA[var_tx]]></Name>
-					<X>720</X><Y>120</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[triangular(2.7,3.15,3)]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
 				<Variable Class="Parameter">
 					<Id>1734473149420</Id>
 					<Name><![CDATA[taxa_Operacao_B1]]></Name>
@@ -16095,11 +15744,10 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[triangular(2.7,3.15,3)]]></Code>
+							<Code><![CDATA[3]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1734473149418</Id>
-							<Label><![CDATA[taxa_Operacao_B1]]></Label>
 							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
@@ -16121,7 +15769,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[triangular(1.5,1.95,1.8)]]></Code>
+							<Code><![CDATA[1.8]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1735048148441</Id>
@@ -16269,6 +15917,76 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<Point><X>-150</X><Y>40</Y></Point>
 						<Point><X>-150</X><Y>-40</Y></Point>
 						<Point><X>-130</X><Y>-40</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1734719432575</Id>
+					<Name><![CDATA[connector27]]></Name>
+					<X>1070</X><Y>350</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[modelologin]]></PackageName>
+						<ClassName><![CDATA[AgentBerco]]></ClassName>
+						<ItemName><![CDATA[TermineiCarga2]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+						<ItemName><![CDATA[outT]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[modelologin]]></PackageName>
+						<ClassName><![CDATA[AgentBerco]]></ClassName>
+						<ItemName><![CDATA[CarregaCab]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>70</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1734719432577</Id>
+					<Name><![CDATA[connector28]]></Name>
+					<X>1180</X><Y>350</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[modelologin]]></PackageName>
+						<ClassName><![CDATA[AgentBerco]]></ClassName>
+						<ItemName><![CDATA[CarregaCab]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[modelologin]]></PackageName>
+						<ClassName><![CDATA[AgentBerco]]></ClassName>
+						<ItemName><![CDATA[TermineiCarga]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>65</X><Y>0</Y></Point>
+						<Point><X>65</X><Y>130</Y></Point>
+						<Point><X>-180</X><Y>130</Y></Point>
+						<Point><X>-180</X><Y>-70</Y></Point>
+						<Point><X>-150</X><Y>-70</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -16810,8 +16528,8 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>40</X><Y>0</Y></Point>
 						<Point><X>40</X><Y>30</Y></Point>
-						<Point><X>-80</X><Y>30</Y></Point>
-						<Point><X>-80</X><Y>-150</Y></Point>
+						<Point><X>-70</X><Y>30</Y></Point>
+						<Point><X>-70</X><Y>-150</Y></Point>
 						<Point><X>-50</X><Y>-150</Y></Point>
 					</Points>
 				</Connector>
@@ -16920,109 +16638,6 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<Point><X>-120</X><Y>30</Y></Point>
 						<Point><X>-120</X><Y>-120</Y></Point>
 						<Point><X>-100</X><Y>-120</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1737569644354</Id>
-					<Name><![CDATA[connector17]]></Name>
-					<X>1030</X><Y>280</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologin]]></PackageName>
-						<ClassName><![CDATA[AgentBerco]]></ClassName>
-						<ItemName><![CDATA[TermineiCarga]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[SelectOutput]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologin]]></PackageName>
-						<ClassName><![CDATA[AgentBerco]]></ClassName>
-						<ItemName><![CDATA[Carrega]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[Delay]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-45</X><Y>0</Y></Point>
-						<Point><X>-45</X><Y>200</Y></Point>
-						<Point><X>265</X><Y>200</Y></Point>
-						<Point><X>265</X><Y>70</Y></Point>
-						<Point><X>230</X><Y>70</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1738089874302</Id>
-					<Name><![CDATA[connector21]]></Name>
-					<X>0</X><Y>0</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologin]]></PackageName>
-						<ClassName><![CDATA[AgentBerco]]></ClassName>
-						<ItemName><![CDATA[TermineiCarga2]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[SelectOutput]]></ClassName>
-						<ItemName><![CDATA[outT]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologin]]></PackageName>
-						<ClassName><![CDATA[AgentBerco]]></ClassName>
-						<ItemName><![CDATA[plainTransfer1]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[PlainTransfer]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>1070</X><Y>350</Y></Point>
-						<Point><X>1140</X><Y>350</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1738089874304</Id>
-					<Name><![CDATA[connector23]]></Name>
-					<X>0</X><Y>0</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologin]]></PackageName>
-						<ClassName><![CDATA[AgentBerco]]></ClassName>
-						<ItemName><![CDATA[plainTransfer1]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[PlainTransfer]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologin]]></PackageName>
-						<ClassName><![CDATA[AgentBerco]]></ClassName>
-						<ItemName><![CDATA[Carrega]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[Delay]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>1160</X><Y>350</Y></Point>
-						<Point><X>1220</X><Y>350</Y></Point>
 					</Points>
 				</Connector>
 			</Connectors>
@@ -17661,10 +17276,8 @@ agent.tempo_entrou_sistema=time();]]></Code>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[agent.instante_Ultimo_Bloco_A_BORDO_NAVIO_HUB=time();
-//main.classeLegal.escreverSaida("MARQUEI O ULTIMO EM "+time(),"saida");
-
 main.retorna_operacao_Navio.take(agent);
-
+//traceln("saiu carregar "+(time()-agent.tempo_entrou_sistema));
 Status_Berco="Parado";]]></Code>
 							</Value>
 						</Parameter>
@@ -17737,9 +17350,6 @@ Status_Berco="Parado";]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[set_taxa_Operacao_B1(triangular(2.7,3.15,3));]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExitTrue]]></Name>
@@ -17902,8 +17512,8 @@ else{
 				</EmbeddedObject>
 				<EmbeddedObject>
 					<Id>1734719432522</Id>
-					<Name><![CDATA[Carrega]]></Name>
-					<X>1220</X><Y>330</Y>
+					<Name><![CDATA[CarregaCab]]></Name>
+					<X>1140</X><Y>330</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -17953,25 +17563,21 @@ else{
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtExit]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[agent.containers_a_bordo_sair+=1;
 if(agent.type_vessel==0){
 	main.PatioLongoCursoSaida-=1;
-	main.agentPatio.PATIO_blocos_LC_SAIDA.get(0).instante_A_BORDO_NAVIO_HUB= time()+1/taxa_Operacao_B1;
 	agent.entradaBlocoABordo.take(main.agentPatio.PATIO_blocos_LC_SAIDA.remove(0));
 }else{
 	main.PatioCabotagemSaida-=1;
-	main.agentPatio.PATIO_blocos_CB_SAIDA.get(0).instante_A_BORDO_NAVIO_HUB= time()+1/taxa_Operacao_B1;
-	agent.entradaBlocoABordo.take(main.agentPatio.PATIO_blocos_CB_SAIDA.remove(0));
+	agent.entradaBlocoABordo.take(main.agentPatio.PATIO_blocos_CB_SAIDA .remove(0));
 }
-
-//agent.entradaBlocoABordo.take(main.agentPatio.PATIO_blocos_LC_SAIDA.remove(0));
 agent.status_agente.setText("Carga");
 Status_Berco="Carga";]]></Code>
 							</Value>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onAtExit]]></Name>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
@@ -18048,15 +17654,6 @@ Status_Berco="Carga";]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[set_taxa_Operacao_B1(triangular(2.7,3.15,3));
-/*if(agent.type_vessel==0){
-	main.classeLegal.escreverSaida("TESTE C1, capacidade: "+
-	agent.capacidade+ ", blocos_a_bordo: "+ 
-	agent.blocos_a_bordo.size()+" tim: "+ time(),"saida");
-	}
-*/]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExitTrue]]></Name>
@@ -18209,11 +17806,6 @@ Status_Berco="Carga";]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[
-//main.classeLegal.escreverSaida("Release capacidade- "+ agent.capacidade +
-//" a bordo -"+agent.blocos_a_bordo.size(), "saida");]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onReleaseUnit]]></Name>
@@ -18919,9 +18511,6 @@ Status_Berco="Parado";]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[set_taxa_Operacao_B2(triangular(2.7,3.15,3));]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExitTrue]]></Name>
@@ -19016,9 +18605,8 @@ Status_Berco="DescargaLC";
 	main.PatioLongoCursoSaida+=1;
 	
 	main.agentPatio.entradaArmazensBlocos.take(agent.blocos_a_bordoLC.remove(0));
-	//traceln("DESC LC-  "+ DescarregadobLC+ " time: "+time());
+	
 }else{
-
 DescarregadobCB++;
 // então tem de CB
 agent.status_agente.setText("DescargaCB");
@@ -19026,8 +18614,9 @@ Status_Berco="DescargaCB";
 	agent.carga_a_bordo_CB-=1;
 	main.PatioCabotagemSaida+=1;
 	main.agentPatio.entradaArmazensBlocos.take(agent.blocos_a_bordoCB.remove(0));
-	//traceln("DESC CB-  "+ DescarregadobCB+ " time: "+time());
+
 }
+
 
 
 
@@ -19241,9 +18830,6 @@ agent.status_agente.setText("Carga");
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[set_taxa_Operacao_B2(triangular(2.7,3.15,3));]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExitTrue]]></Name>
@@ -19417,14 +19003,6 @@ agent.status_agente.setText("Carga");
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[/*if(agent.type_vessel==0){
-	main.classeLegal.escreverSaida("Teste C2 capacidade- "+
-	 agent.capacidade +
-	" a bordo -"+agent.blocos_a_bordo.size(),"saida");
-	main.classeLegal.escreverSaida("PATIO: "+main.agentPatio.PATIO_blocos_LC_SAIDA.size(),"saida");
-}*/]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExitTrue]]></Name>
@@ -19518,24 +19096,11 @@ agent.status_agente.setText("Carga");
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[agent.status_agente.setText("Navio Aguarda Carga");
-Status_Berco="Aguardando p Carga";
-if(agent.type_vessel==0){
-	main.classeLegal.escreverSaida("entrou pra aguardar carga= "+time(),"saida");
-//	traceln("entrou pra aguardar carga= "+time());
-	}
-	if(agent.capacidade==agent.blocos_a_bordo.size()){
-		Wait_Navio_Aguarda_Carga_para_sair.freeAll();
-	}]]></Code>
+Status_Berco="Aguardando p Carga";]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[if(agent.type_vessel==0){
-	main.classeLegal.escreverSaida("Saiu do aguardo carga= "+time(),"saida");
-	//traceln("Saiu do aguardo carga= "+time());
-	}]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExitTimeout]]></Name>
@@ -19756,66 +19321,6 @@ Status_Berco="Aguardando p Carga";]]></Code>
 					<QuantityColumn>
 					</QuantityColumn>
 				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1738089872170</Id>
-					<Name><![CDATA[plainTransfer1]]></Name>
-					<X>1140</X><Y>340</Y>
-					<Label><X>-35</X><Y>-15</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[PlainTransfer]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-							<ClassName><![CDATA[PlainTransfer]]></ClassName>
-							<ItemName><![CDATA[1412336243167]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[onAtEnter]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[//main.classeLegal.escreverSaida("NAVIO "+ agent.type_vessel+
-//" - CONTAINER :"+ agent.blocos_a_bordo.size()+" tempo: "+time()+1/taxa_Operacao_B1,"saida");
-
-]]></Code>
-							</Value>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onCancelEnter]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onEnter]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>XYZ</InitialLocationType>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
 			</EmbeddedObjects>
 
 			<Presentation>
@@ -19937,11 +19442,10 @@ Status_Berco="Aguardando p Carga";]]></Code>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[Berço ]]></Text>
-					<TextCode><![CDATA["Berço "+ ((ID_BERCO)+1)]]></TextCode>
+					<Text><![CDATA[Berço1]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
-						<Size>26</Size>
+						<Size>18</Size>
 						<Style>1</Style>
 					</Font>
 					<Alignment>LEFT</Alignment>
@@ -23190,7 +22694,8 @@ Status_Berco="Aguardando p Carga";]]></Code>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[//if(blocos_a_bordo.size()==capacidade){
+								<Code><![CDATA[agent.instante_A_BORDO_NAVIO_HUB=time();
+//if(blocos_a_bordo.size()==capacidade){
 //instante_Ultimo_Bloco_A_BORDO_NAVIO_HUB=time();
 //}]]></Code>
 							</Value>
@@ -26382,79 +25887,6 @@ Status_Berco="Aguardando p Carga";]]></Code>
 			<BypassInitialScreen>true</BypassInitialScreen>
 		</SimulationExperiment>	
 	</Experiments>
-	<JavaClasses>
-		<!--   =========   Java Class   ========  -->
-		<JavaClass>
-			<Id>1737570139501</Id>
-			<Name><![CDATA[ClasseJAVALEGAL]]></Name>
-			<Text><![CDATA[/**
- * ClasseJAVALEGAL
- */	
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.Collection;
-public class ClasseJAVALEGAL implements Serializable {
-
-    /**
-     * Default constructor
-     */
-    public ClasseJAVALEGAL() {
-    }
-
-	@Override
-	public String toString() {
-		return super.toString();
-	}
-	public void escreverColecaoEmArquivo(Collection<Double> colecao) {
-	    // Caminho do arquivo de saída
-	    String caminhoArquivo = "saida.txt";
-
-	    try (BufferedWriter writer = new BufferedWriter(new FileWriter(caminhoArquivo))) {
-	        // Iterando sobre a coleção e escrevendo os valores no arquivo
-	        for (Double valor : colecao) {
-	            writer.write(valor.toString());
-	            writer.newLine();  // Adiciona uma nova linha após cada valor
-	        }
-	    } catch (IOException e) {
-	        e.printStackTrace();
-	    }
-	}
-	public void escreverSaida(String conteudo, String nomeArquivo) {
-	    // Caminho do arquivo de saída
-	    String caminhoArquivo = nomeArquivo + ".txt"; // Adiciona a extensão .txt ao nome do arquivo
-
-	    try (BufferedWriter writer = new BufferedWriter(new FileWriter(caminhoArquivo, true))) {
-	        // Escreve o conteúdo no arquivo
-	        writer.write(conteudo);
-	        writer.newLine();  // Adiciona uma nova linha após o conteúdo
-	    } catch (IOException e) {
-	        e.printStackTrace();
-	    }
-	}
-	
-
-	public void limparArquivo(String nomeArquivo) {
-	    // Caminho do arquivo
-	    String caminhoArquivo = nomeArquivo + ".txt";
-
-	    try (BufferedWriter writer = new BufferedWriter(new FileWriter(caminhoArquivo))) {
-	        // Abrir o arquivo em modo de escrita (sem append) limpa o conteúdo
-	        writer.write(""); // Escreve uma string vazia para garantir que o arquivo esteja limpo
-	    } catch (IOException e) {
-	        e.printStackTrace();
-	    }
-	}
-
-	/**
-	 * This number is here for model snapshot storing purpose<br>
-	 * It needs to be changed when this class gets changed
-	 */ 
-	private static final long serialVersionUID = 1L;
-
-}]]></Text>
-		</JavaClass>
-	</JavaClasses>
 	<ModelResources>
 		<Resource>
 			<Path><![CDATA[3d/container40.dae]]></Path>
