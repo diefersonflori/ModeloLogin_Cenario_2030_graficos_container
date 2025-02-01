@@ -1,0 +1,8 @@
+entrou pra aguardar carga= 176.59219808704427
+Saiu do aguardo carga= 184.11240387471415
+entrou pra aguardar carga= 184.77842236936738
+Saiu do aguardo carga= 184.81061676982046
+entrou pra aguardar carga= 185.80690534730937
+Saiu do aguardo carga= 185.8123389678293
+entrou pra aguardar carga= 186.85312813952356
+Saiu do aguardo carga= 186.85928955526649
