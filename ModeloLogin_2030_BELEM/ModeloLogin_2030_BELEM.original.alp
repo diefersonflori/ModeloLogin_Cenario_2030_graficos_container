@@ -9,7 +9,7 @@
 	<Id>1734024203026</Id>
 	<Name><![CDATA[ModeloLogin_2030_BELEM]]></Name>
 	<EngineVersion>6</EngineVersion>
-	<JavaPackageName><![CDATA[modelologinBL]]></JavaPackageName>
+	<JavaPackageName><![CDATA[modelologinBelem]]></JavaPackageName>
 	<ModelTimeUnit><![CDATA[Hour]]></ModelTimeUnit>
 	
 	<Folders>
@@ -36,14 +36,13 @@ import java.text.DecimalFormat;]]></Import>
 // para conjuntos de containeres- 20 blocos cada 
 // embarcação
 //traceln(gisRoute_NS_AM.length(METER));
-//traceln(gisRouteBL_NS.length(METER));
-traceln(gisRoute2.length(METER));
+//traceln(gisRouteBelem_NS.length(METER));
 //traceln(gisRouteInicial.length(METER));
-//traceln("Soma: "+ gisRoute_NS_AM.length(METER)+gisRouteBL_NS.length(METER)+gisRouteInicial.length(METER));
+//traceln("Soma: "+ gisRoute_NS_AM.length(METER)+gisRouteBelem_NS.length(METER)+gisRouteInicial.length(METER));
 set_taxa_operacao_Manaus();
 
 //viewAreachart.navigateTo();
-//viewArea_patios_cam.navigateTo();
+viewArea_patios_cam.navigateTo();
 //viewAreaChart_Tempos_Navios_bercos.navigateTo();
 //viewArea_tempos_blocos.navigateTo();
 for(int ii=0; ii<hUBs.size();ii++){
@@ -61,7 +60,7 @@ taxas = selectFrom( tb_chegadas_comb ).list( tb_chegadas_comb.rate_ariving );
 quantidade_de_comboios=taxas.size()-7;
 
 //for(int ii=0;ii< quantidade_de_comboios;ii++){
-for(int ii=0;ii< 4;ii++){
+for(int ii=0;ii< 2;ii++){
 	Cria_Comboio.inject();
 }
 //Cria_Comboio.maxArrivals=quantidade_de_comboios;
@@ -484,7 +483,7 @@ for(int ii=0;ii< 4;ii++){
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1739205543404</Id>
-					<Name><![CDATA[variable_aux_id_combBL]]></Name>
+					<Name><![CDATA[variable_aux_id_combBelem]]></Name>
 					<X>780</X><Y>1980</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -547,8 +546,8 @@ for(int ii=0;ii< 4;ii++){
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1736428291048</Id>
-					<Name><![CDATA[capacidade_CB_BL]]></Name>
-					<X>-770</X><Y>1260</Y>
+					<Name><![CDATA[capacidade_CB_BELEM]]></Name>
+					<X>-770</X><Y>1280</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -558,7 +557,7 @@ for(int ii=0;ii< 4;ii++){
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[20]]></Code>
+							<Code><![CDATA[103]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1736428291046</Id>
@@ -571,7 +570,7 @@ for(int ii=0;ii< 4;ii++){
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1736428372572</Id>
-					<Name><![CDATA[capacidade_LC_BL]]></Name>
+					<Name><![CDATA[capacidade_LC_BELEM]]></Name>
 					<X>-770</X><Y>1220</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -582,7 +581,7 @@ for(int ii=0;ii< 4;ii++){
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
+							<Code><![CDATA[11]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1736428372570</Id>
@@ -651,7 +650,7 @@ for(int ii=0;ii< 4;ii++){
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[79]]></Code>
+							<Code><![CDATA[11]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1736863760409</Id>
@@ -675,7 +674,7 @@ for(int ii=0;ii< 4;ii++){
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[326]]></Code>
+							<Code><![CDATA[100]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1736883573919</Id>
@@ -699,7 +698,7 @@ for(int ii=0;ii< 4;ii++){
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[360]]></Code>
+							<Code><![CDATA[128]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1736883597227</Id>
@@ -713,7 +712,7 @@ for(int ii=0;ii< 4;ii++){
 				<Variable Class="Parameter">
 					<Id>1738332586638</Id>
 					<Name><![CDATA[t_viag_comb_sai_am]]></Name>
-					<X>-480</X><Y>1420</Y>
+					<X>440</X><Y>1440</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -737,7 +736,7 @@ for(int ii=0;ii< 4;ii++){
 				<Variable Class="Parameter">
 					<Id>1738332624578</Id>
 					<Name><![CDATA[t_viag_comb_sai_HUB]]></Name>
-					<X>-480</X><Y>1460</Y>
+					<X>440</X><Y>1480</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -795,7 +794,7 @@ for(int ii=0;ii< 4;ii++){
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[86]]></Code>
+							<Code><![CDATA[125]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1738868566297</Id>
@@ -820,7 +819,7 @@ for(int ii=0;ii< 4;ii++){
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[capacidade_ComboioCB]]></Code>
+							<Code><![CDATA[125]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1739209126442</Id>
@@ -834,7 +833,7 @@ for(int ii=0;ii< 4;ii++){
 				<Variable Class="Parameter">
 					<Id>1739209126460</Id>
 					<Name><![CDATA[capacidade_LC_AM]]></Name>
-					<X>-770</X><Y>1280</Y>
+					<X>-770</X><Y>1250</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -844,7 +843,7 @@ for(int ii=0;ii< 4;ii++){
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[capacidade_ComboioLC]]></Code>
+							<Code><![CDATA[11]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1739209126458</Id>
@@ -951,30 +950,6 @@ for(int ii=0;ii< 4;ii++){
 						</ParameterEditor>
 					</Properties>                 
 				</Variable>
-				<Variable Class="Parameter">
-					<Id>1739910010631</Id>
-					<Name><![CDATA[Tempo_Atraso_Navio]]></Name>
-					<X>-540</X><Y>1500</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[24]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1739910010629</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
 				<Variable Class="CollectionVariable">
 					<Id>1736792525218</Id>
 					<Name><![CDATA[collection_bercos]]></Name>
@@ -1004,7 +979,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exit]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1014,7 +989,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[queue]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1037,7 +1012,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[plainTransfer1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1047,7 +1022,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[Entrada_CB_quinta]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1070,7 +1045,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[sink2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1080,7 +1055,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[plainTransfer1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1103,7 +1078,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[escolhe_berco_Navio]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1113,7 +1088,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1136,7 +1111,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo8]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1146,7 +1121,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo7]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1169,7 +1144,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo9]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1179,7 +1154,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo8]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1202,7 +1177,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo11]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1212,7 +1187,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo10]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1235,7 +1210,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo12]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1245,7 +1220,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo11]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1268,7 +1243,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exit5]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1278,7 +1253,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[OperaEmManaus]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1301,7 +1276,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exit2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1311,7 +1286,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo9]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1334,7 +1309,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[comboio_aproxima_Hub]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1344,7 +1319,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[queueComboio_retornando]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1367,7 +1342,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[OperaEmManaus]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1377,7 +1352,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[queue_comb_aguarda_AM]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1400,7 +1375,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[queue_comb_aguarda_AM]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1410,7 +1385,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo12]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1433,7 +1408,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[releaseFundeio]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1443,7 +1418,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exit4]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1466,7 +1441,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[seize]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1476,7 +1451,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[queueNavio_aguardando]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1499,7 +1474,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[seize1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1509,7 +1484,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[queue_comboio_aguardando]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1532,7 +1507,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1542,7 +1517,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo13]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1565,7 +1540,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo13]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1575,7 +1550,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[EnterChegada_Navios]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1598,7 +1573,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[sink3]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1608,7 +1583,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[Cria_Comb]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1631,7 +1606,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[comboio_aproxima_Hub]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1641,7 +1616,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enter_escolhe_berco]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1664,7 +1639,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[comboio_aproxima_Hub1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1674,7 +1649,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[queueComboio_from_fundeio_escolhe_berco]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1697,7 +1672,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveFromFundeiocombToBerc]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1707,7 +1682,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[comboio_aproxima_Hub1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1730,7 +1705,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[EnterNavioEspera]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1740,7 +1715,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveToFundeioNavio]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1763,7 +1738,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveToFundeioNavio]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1773,7 +1748,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[seize]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1796,7 +1771,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enter_Navio_Desatraca_from_fundeio]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1806,7 +1781,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveFromFundeioNavioToBerco]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1829,7 +1804,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveFromFundeioNavioToBerco]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1839,7 +1814,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[releaseFundeio]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1862,7 +1837,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[EnterComboioEspera]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1872,7 +1847,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveToFundeioComboio]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1895,7 +1870,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveToFundeioComboio]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1905,7 +1880,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[seize1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1928,7 +1903,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[plainTransfer3]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1938,7 +1913,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[Entrada_LC_terca]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1961,7 +1936,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[sink4]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1971,7 +1946,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[plainTransfer3]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1994,7 +1969,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enter_escolhe_bercoretorno_fundeio]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2004,7 +1979,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[release]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2027,7 +2002,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[release]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2037,7 +2012,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveFromFundeiocombToBerc]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2060,7 +2035,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[delay_final_navio]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2070,7 +2045,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo5]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2093,7 +2068,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[queue]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2103,7 +2078,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[escolhe_berco_Navio]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2126,7 +2101,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo7]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2136,7 +2111,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[EnterComboioSaiDeManaus]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2147,7 +2122,7 @@ for(int ii=0;ii< 4;ii++){
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-330</X><Y>0</Y></Point>
+						<Point><X>-150</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -2159,7 +2134,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exit6]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2169,7 +2144,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[OperaCarregaEmManaus]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2192,7 +2167,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[OperaCarregaEmManaus]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2202,7 +2177,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[queue1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2225,7 +2200,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[queue1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2235,7 +2210,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enterComboioCriadoEmManaus]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2258,7 +2233,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exit1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2268,7 +2243,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[delay_final_navio]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2291,7 +2266,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[plainTransfer_final_navio]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2301,7 +2276,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[retorna_operacao_Navio]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2324,7 +2299,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[Cria_Comb]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2334,7 +2309,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[delay]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2357,7 +2332,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[queue2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2367,7 +2342,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[Cria_Comboio]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2390,7 +2365,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[delay]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2400,7 +2375,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[set_delay]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2423,7 +2398,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[set_delay]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2433,7 +2408,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[queue2]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2456,7 +2431,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[marcar_tempos]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2466,7 +2441,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[plainTransfer_final_navio]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2489,7 +2464,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo5]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2499,7 +2474,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[excel]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2522,7 +2497,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[excel]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2532,7 +2507,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[marcar_tempos]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2555,9 +2530,9 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[Cria_CombBL]]></ItemName>
+						<ItemName><![CDATA[Cria_CombBelem]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
@@ -2565,7 +2540,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[source]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2588,7 +2563,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2598,9 +2573,9 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[enterComboioBL]]></ItemName>
+						<ItemName><![CDATA[enterComboioBELEM]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
@@ -2621,7 +2596,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo10]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2631,7 +2606,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[origemComb]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2654,7 +2629,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[origemComb]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2664,7 +2639,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[EnterComboioSaiDoHub]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2687,9 +2662,9 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[moveToBL]]></ItemName>
+						<ItemName><![CDATA[moveToBelem]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
@@ -2697,7 +2672,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[origemComb]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2721,7 +2696,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[sink1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2731,9 +2706,9 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[Cria_CombBL]]></ItemName>
+						<ItemName><![CDATA[Cria_CombBelem]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
@@ -2754,7 +2729,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[queue3]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2764,7 +2739,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveTo1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2787,9 +2762,9 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[moveToBL]]></ItemName>
+						<ItemName><![CDATA[moveToBelem]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
@@ -2797,9 +2772,9 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[delay_final_comb_BL]]></ItemName>
+						<ItemName><![CDATA[delay_final_comb_belem]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
@@ -2820,9 +2795,9 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[delay_final_comb_BL]]></ItemName>
+						<ItemName><![CDATA[delay_final_comb_belem]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
@@ -2830,7 +2805,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[r_AM_HUM]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2853,7 +2828,7 @@ for(int ii=0;ii< 4;ii++){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[r_AM_HUM]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2863,7 +2838,7 @@ for(int ii=0;ii< 4;ii++){
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[sink]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2990,36 +2965,6 @@ tempo_modeloANO=anoAtual;
 					</Properties>
 					<Action><![CDATA[text_last_year.setVisible(true);]]></Action>
 				</Event>
-				<Event>
-					<Id>1739910250867</Id>
-					<Name><![CDATA[CriaComboio]]></Name>
-					<X>-200</X><Y>1840</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties TriggerType="condition" Mode="occuresOnce">
-						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-						</Timeout>
-						<Rate Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="RateUnits"><![CDATA[PER_HOUR]]></Unit>
-						</Rate>
-						<OccurrenceAtTime>true</OccurrenceAtTime>
-						<OccurrenceDate>1739952000000</OccurrenceDate>
-						<OccurrenceTime Class="CodeUnitValue">
-							<Code><![CDATA[0]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-						</OccurrenceTime>
-						<RecurrenceCode Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-						</RecurrenceCode>
-						<Condition><![CDATA[(time()%168-144)==0]]></Condition>
-					</Properties>
-				</Event>
 			</Events>
 			<Functions>
 				<Function AccessType="default" StaticFunction="false">
@@ -3032,8 +2977,7 @@ tempo_modeloANO=anoAtual;
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Body><![CDATA[//set_txOpManaus(nbGuindastes*0.6);
-set_txOpManaus(nbGuindastes*0.5172);
+					<Body><![CDATA[set_txOpManaus(nbGuindastes*0.6);
 //set_txOpManaus(nbGuindastes*12);]]></Body>
 				</Function>
 			</Functions>
@@ -3352,12 +3296,12 @@ set_txOpManaus(nbGuindastes*0.5172);
 					<ShowLabel>true</ShowLabel>
 					<PresentationId>1734353837885</PresentationId>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[modelologinBL]]></PackageName>
+							<PackageName><![CDATA[modelologinBelem]]></PackageName>
 							<ClassName><![CDATA[AgentBerco]]></ClassName>
 							<ItemName><![CDATA[1734352745450]]></ItemName>
 						</GenericParameterSubstituteReference>
@@ -3903,13 +3847,6 @@ oval_ocupado1.setFillColor(Color.GREEN);
 								<Code><![CDATA[agent.status_agente.setText("NavegaVC");
 if(time()>10){
 	
-}
-if(agent.type_vessel==0){
-traceln("Navio "+quant_Nav_LC+ "LC entrou "+time());
-}
-else{
-traceln("Navio "+quant_Nav_CB+ "CB entrou "+time());
-
 }]]></Code>
 							</Value>
 						</Parameter>
@@ -4005,12 +3942,12 @@ traceln("Navio "+quant_Nav_CB+ "CB entrou "+time());
 					<ShowLabel>true</ShowLabel>
 					<PresentationId>1735844123285</PresentationId>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentNavio]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[modelologinBL]]></PackageName>
+							<PackageName><![CDATA[modelologinBelem]]></PackageName>
 							<ClassName><![CDATA[AgentNavio]]></ClassName>
 							<ItemName><![CDATA[1734525723882]]></ItemName>
 						</GenericParameterSubstituteReference>
@@ -4026,10 +3963,10 @@ traceln("Navio "+quant_Nav_CB+ "CB entrou "+time());
 							<Name><![CDATA[berco_atracado]]></Name>
 						</Parameter>
 						<Parameter>
-							<Name><![CDATA[containeres_a_bordo_BL]]></Name>
+							<Name><![CDATA[containeres_a_bordo_BELEM]]></Name>
 						</Parameter>
 						<Parameter>
-							<Name><![CDATA[capacidade_BL]]></Name>
+							<Name><![CDATA[capacidade_BELEM]]></Name>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
@@ -4085,7 +4022,7 @@ traceln("Navio "+quant_Nav_CB+ "CB entrou "+time());
 }
 agent.containers_a_bordo_sair=0;
 
-agent.set_containeres_a_bordo_BL(agent.capacidade_BL);
+agent.set_containeres_a_bordo_BELEM(agent.capacidade_BELEM);
 agent.set_containeres_a_bordo_AM(agent.capacidade_AM);
 
 
@@ -4359,27 +4296,26 @@ EnterChegada_Navios.take(agent);
 							<Value Class="CodeValue">
 								<Code><![CDATA[AgentNavio Navio= add_agentNavio();
 Navio.type_vessel=1;
-Navio.set_capacidade_BL(capacidade_CB_BL);
+Navio.set_capacidade_BELEM(capacidade_CB_BELEM);
 Navio.set_capacidade_AM(capacidade_CB_AM);
-Navio.set_containeres_a_bordo_BL(Navio.capacidade_BL);
+Navio.set_containeres_a_bordo_BELEM(Navio.capacidade_BELEM);
 Navio.set_containeres_a_bordo_AM(Navio.capacidade_AM);
 
+for( int ii=0; ii<capacidade_CB_BELEM;ii++){
+	AgentBlocoContainer Bloco= add_agentBlocoContainer();
+	Bloco.tipo_do_bloco_inout=0;// entrada- para Manaus
+	Bloco.set_nome_bloco("CABOT BL");
+	Bloco.tipo_do_bloco=1;// CB
+	Bloco.TipoBelem=true;
+	Navio.entradaBlocoABordo.take(Bloco);
+}
 
 for( int ii=0; ii<capacidade_CB_AM;ii++){
 	AgentBlocoContainer Bloco= add_agentBlocoContainer();
 	Bloco.tipo_do_bloco_inout=0;// entrada- para Manaus
 	Bloco.set_nome_bloco("CABOT AM");
 	Bloco.tipo_do_bloco=1;// CB
-	Bloco.TipoBL=false;
-	Navio.entradaBlocoABordo.take(Bloco);
-}
-
-for( int ii=0; ii<capacidade_CB_BL;ii++){
-	AgentBlocoContainer Bloco= add_agentBlocoContainer();
-	Bloco.tipo_do_bloco_inout=0;// entrada- para Manaus
-	Bloco.set_nome_bloco("CABOT BL");
-	Bloco.tipo_do_bloco=1;// CB
-	Bloco.TipoBL=true;
+	Bloco.TipoBelem=false;
 	Navio.entradaBlocoABordo.take(Bloco);
 }
  Navio.ID=IDNAVIOCB;
@@ -4563,15 +4499,9 @@ else{
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[queuing]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[self.QUEUING_PRIORITY]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[priority]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[agent.prioridade]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[comparison]]></Name>
@@ -4648,12 +4578,12 @@ else{
 					<ShowLabel>true</ShowLabel>
 					<PresentationId>1735844244853</PresentationId>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentComboio]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[modelologinBL]]></PackageName>
+							<PackageName><![CDATA[modelologinBelem]]></PackageName>
 							<ClassName><![CDATA[AgentComboio]]></ClassName>
 							<ItemName><![CDATA[1734525640195]]></ItemName>
 						</GenericParameterSubstituteReference>
@@ -4982,7 +4912,7 @@ else{
 				<EmbeddedObject>
 					<Id>1735047837030</Id>
 					<Name><![CDATA[EnterComboioSaiDeManaus]]></Name>
-					<X>420</X><Y>1460</Y>
+					<X>600</X><Y>1460</Y>
 					<Label><X>-5</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5080,10 +5010,8 @@ for(int ii=0;ii<agent.blocos_a_bordoLC.size();ii++){
 	agent.blocos_a_bordoLC.get(ii).instante_A_BORDO_BARC_AM=time();
 }
 agent.instante_saida_AM=time();
-//set_t_viag_comb_sai_am(triangular(100,145,135));
-set_t_viag_comb_sai_am(130);
-//agent.StatusComboio_Color.setFillColor
-traceln("Comboio "+ agent.ID+ " Sai de AM: "+time());]]></Code>
+set_t_viag_comb_sai_am(triangular(100,145,135));
+//agent.StatusComboio_Color.setFillColor]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -5146,7 +5074,7 @@ traceln("Comboio "+ agent.ID+ " Sai de AM: "+time());]]></Code>
 						<Parameter>
 							<Name><![CDATA[destinationNode]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[conexaoBL]]></Code>
+								<Code><![CDATA[conexaoBelem]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -5444,7 +5372,7 @@ traceln("Comboio "+ agent.ID+ " Sai de AM: "+time());]]></Code>
 						<Parameter>
 							<Name><![CDATA[destinationNode]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[conexaoBL]]></Code>
+								<Code><![CDATA[conexaoBelem]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -5664,9 +5592,9 @@ traceln("Comboio "+ agent.ID+ " Sai de AM: "+time());]]></Code>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[agent.status_agente.setText("NavegaAM");
-traceln("Comboio de "+agent.origem+" ID: "+ agent.ID+" SaiHub: "+time());
+//traceln("ComboioSaiHub");
 //traceln("distancias VC_CONXBL: "     +gisRouteInicial.length());
-//traceln("distancias CONXBL_CONXNS: " +gisRouteBL_NS.length());
+//traceln("distancias CONXBL_CONXNS: " +gisRouteBelem_NS.length());
 //traceln("distancias CONXNS_AM: "     +gisRoute_NS_AM.length());
 if(queue_comboio_aguardando.size()>0){
 enter_escolhe_bercoretorno_fundeio.take(queue_comboio_aguardando.remove(0));
@@ -5679,8 +5607,7 @@ oval_ocupado2.setFillColor(Color.GREEN);
 if(agent.berco_atracado==3){
 oval_ocupado3.setFillColor(Color.GREEN);
 }
-//set_t_viag_comb_sai_HUB(triangular(205,245,230));
-set_t_viag_comb_sai_HUB(225);
+set_t_viag_comb_sai_HUB(triangular(205,245,230));
 agent.instante_saida_HUB=time();]]></Code>
 							</Value>
 						</Parameter>
@@ -6586,7 +6513,6 @@ else{
 
 //envia comboio berco
 if(ok){
-traceln("Comboio de "+agent.origem+" ID: "+ agent.ID+" ENTROU NO Hub: "+time());
 	if(Berco_atrac_Comboioaux==2){
 		
 	oval_ocupado2.setFillColor(Color.RED);
@@ -6602,7 +6528,6 @@ traceln("Comboio de "+agent.origem+" ID: "+ agent.ID+" ENTROU NO Hub: "+time());
 		agent.setLocation(collection_bercos.get(Berco_atrac_Comboioaux));
 }
 else{
-
 	EnterComboioEspera.take(queueComboio_retornando.remove(0));
 }]]></Code>
 							</Value>
@@ -8651,7 +8576,7 @@ remove_agentNavio(agent);]]></Code>
 						<Parameter>
 							<Name><![CDATA[destinationNode]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[conexaoBL]]></Code>
+								<Code><![CDATA[conexaoBelem]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -8842,7 +8767,7 @@ remove_agentNavio(agent);]]></Code>
 							<Name><![CDATA[databaseTable]]></Name>
 							<Value Class="DatabaseContextTableCodeValue">
 								<TableReference>
-									<PackageName><![CDATA[modelologinBL]]></PackageName>
+									<PackageName><![CDATA[modelologinBelem]]></PackageName>
 									<ClassName><![CDATA[tb_chegadas_comb]]></ClassName>
 								</TableReference>
 							</Value>
@@ -8851,7 +8776,7 @@ remove_agentNavio(agent);]]></Code>
 							<Name><![CDATA[arrivalDate]]></Name>
 							<Value Class="DatabaseContextTableColumnCodeValue">
 								<ColumnReference>
-									<PackageName><![CDATA[modelologinBL]]></PackageName>
+									<PackageName><![CDATA[modelologinBelem]]></PackageName>
 									<ClassName><![CDATA[tb_chegadas_comb]]></ClassName>
 									<ItemName><![CDATA[rate_ariving_dates]]></ItemName>
 								</ColumnReference>
@@ -9033,7 +8958,7 @@ for( int ii=0; ii<Comboio.carga_a_bordo_LC;ii++){
 	Bloco.set_nome_bloco("lONGOC AM");
 	Bloco.rectangle.setFillColor(cyan);
 	Bloco.variable_ID_Comboio=Comboio.ID;
-	Bloco.TipoBL=false;
+	Bloco.TipoBelem=false;
 	Comboio.entradaBlocoABordoLC.take(Bloco);
 	
 }
@@ -9046,13 +8971,12 @@ for( int ii=0; ii<Comboio.carga_a_bordo_CB;ii++){
 	Bloco.set_nome_bloco("CABOT AM");
 	//Bloco.ord//
 	Bloco.variable_ID_Comboio=Comboio.ID;
-	Bloco.TipoBL=false;
+	Bloco.TipoBelem=false;
 	Comboio.entradaBlocoABordoCB.take(Bloco);
 }
 //EnterComboioSaiDeManaus.take(Comboio);
 // comboioSaiDeManausCarregando
-traceln("Comboio "+ Comboio.ID+ " Criado em AM: "+time());
-Comboio.prioridade=1;
+
 enterComboioCriadoEmManaus.take(Comboio);
 variable_aux_id_comb++;]]></Code>
 							</Value>
@@ -10416,11 +10340,21 @@ else{
 							<Value Class="CodeValue">
 								<Code><![CDATA[AgentNavio Navio= add_agentNavio();
 Navio.type_vessel=0;
-Navio.set_capacidade_BL(capacidade_LC_BL);
+Navio.set_capacidade_BELEM(capacidade_LC_BELEM);
 Navio.set_capacidade_AM(capacidade_LC_AM);
-Navio.set_containeres_a_bordo_BL(Navio.capacidade_BL);
+Navio.set_containeres_a_bordo_BELEM(Navio.capacidade_BELEM);
 Navio.set_containeres_a_bordo_AM(Navio.capacidade_AM);
 
+for( int ii=0; ii<capacidade_LC_BELEM;ii++){
+	AgentBlocoContainer Bloco= add_agentBlocoContainer();
+	Bloco.tipo_do_bloco_inout=0;// entrada- para Manaus
+	Bloco.tipo_do_bloco=0;// LC
+	Bloco.set_nome_bloco("lONGOC BL");
+	Bloco.rectangle.setFillColor(cyan);
+	Bloco.TipoBelem=true;
+	Navio.entradaBlocoABordo.take(Bloco);
+	
+}
 
 for( int ii=0; ii<capacidade_LC_AM;ii++){
 	AgentBlocoContainer Bloco= add_agentBlocoContainer();
@@ -10428,18 +10362,7 @@ for( int ii=0; ii<capacidade_LC_AM;ii++){
 	Bloco.tipo_do_bloco=0;// LC
 	Bloco.set_nome_bloco("lONGOC AM");
 	Bloco.rectangle.setFillColor(cyan);
-	Bloco.TipoBL=false;
-	Navio.entradaBlocoABordo.take(Bloco);
-	
-}
-
-for( int ii=0; ii<capacidade_LC_BL;ii++){
-	AgentBlocoContainer Bloco= add_agentBlocoContainer();
-	Bloco.tipo_do_bloco_inout=0;// entrada- para Manaus
-	Bloco.tipo_do_bloco=0;// LC
-	Bloco.set_nome_bloco("lONGOC BL");
-	Bloco.rectangle.setFillColor(cyan);
-	Bloco.TipoBL=true;
+	Bloco.TipoBelem=false;
 	Navio.entradaBlocoABordo.take(Bloco);
 	
 }
@@ -10647,7 +10570,7 @@ EnterChegada_Navios.take(Navio);]]></Code>
 						<Parameter>
 							<Name><![CDATA[delayTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[(7*24-(2*((agent.capacidade_AM+agent.capacidade_BL) /hUBs.get(0).taxa_Operacao_B1)))]]></Code>
+								<Code><![CDATA[(200*24-(2*((agent.capacidade_AM+agent.capacidade_BELEM) /hUBs.get(0).taxa_Operacao_B1)))]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
 							</Value>
 						</Parameter>
@@ -11414,12 +11337,12 @@ aux_list++;]]></Code>
 					<ShowLabel>true</ShowLabel>
 					<PresentationId>1736601068247</PresentationId>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBlocoContainer]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[modelologinBL]]></PackageName>
+							<PackageName><![CDATA[modelologinBelem]]></PackageName>
 							<ClassName><![CDATA[AgentBlocoContainer]]></ClassName>
 							<ItemName><![CDATA[1736600710991]]></ItemName>
 						</GenericParameterSubstituteReference>
@@ -11467,12 +11390,12 @@ aux_list++;]]></Code>
 					<ShowLabel>true</ShowLabel>
 					<PresentationId>1736691402879</PresentationId>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[modelologinBL]]></PackageName>
+							<PackageName><![CDATA[modelologinBelem]]></PackageName>
 							<ClassName><![CDATA[AgentPatio]]></ClassName>
 							<ItemName><![CDATA[1736691348245]]></ItemName>
 						</GenericParameterSubstituteReference>
@@ -11737,15 +11660,11 @@ if(time() >= 17661){//||
 						<Parameter>
 							<Name><![CDATA[firstArrivalMode]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[self.AT_TIME]]></Code>
+								<Code><![CDATA[self.AT_START]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[firstArrivalTime]]></Name>
-							<Value Class="CodeUnitValue">
-								<Code><![CDATA[300]]></Code>
-								<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[rateSchedule]]></Name>
@@ -11822,7 +11741,7 @@ if(time() >= 17661){//||
 						<Parameter>
 							<Name><![CDATA[locationNode]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[PortoBL]]></Code>
+								<Code><![CDATA[PortoBelem]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -11903,7 +11822,7 @@ if(time() >= 17661){//||
 				</EmbeddedObject>
 				<EmbeddedObject>
 					<Id>1738965513705</Id>
-					<Name><![CDATA[agentComboioDeBL]]></Name>
+					<Name><![CDATA[agentComboioDeBelem]]></Name>
 					<X>980</X><Y>1860</Y>
 					<Label><X>-50</X><Y>-30</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -11911,12 +11830,12 @@ if(time() >= 17661){//||
 					<ShowLabel>true</ShowLabel>
 					<PresentationId>1738965517200</PresentationId>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentComboio]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[modelologinBL]]></PackageName>
+							<PackageName><![CDATA[modelologinBelem]]></PackageName>
 							<ClassName><![CDATA[AgentComboio]]></ClassName>
 							<ItemName><![CDATA[1734525640195]]></ItemName>
 						</GenericParameterSubstituteReference>
@@ -11924,11 +11843,14 @@ if(time() >= 17661){//||
 					<Parameters>
 						<Parameter>
 							<Name><![CDATA[capacidadeCB]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[103]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[capacidadeLC]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[0]]></Code>
+								<Code><![CDATA[11]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -11959,7 +11881,7 @@ if(time() >= 17661){//||
 				</EmbeddedObject>
 				<EmbeddedObject>
 					<Id>1738965636516</Id>
-					<Name><![CDATA[Cria_CombBL]]></Name>
+					<Name><![CDATA[Cria_CombBelem]]></Name>
 					<X>610</X><Y>1940</Y>
 					<Label><X>-26.429</X><Y>-12.714</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -11987,9 +11909,9 @@ if(time() >= 17661){//||
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[//traceln("comboio entrou "+ time());
-AgentComboio Comboio= add_agentComboioDeBL();
+AgentComboio Comboio= add_agentComboioDeBelem();
 Comboio.ID=variable_aux_id_comb;
-Comboio.origem="BL";
+Comboio.origem="Belem";
 //Containers LC
 Comboio.carga_a_bordo_LC=Comboio.capacidadeLC;
 //traceln("LC divisao "+Comboio.carga_a_bordo_LC);
@@ -12001,7 +11923,7 @@ for( int ii=0; ii<Comboio.carga_a_bordo_LC;ii++){
 	Bloco.set_nome_bloco("lONGOC BL");
 	Bloco.rectangle.setFillColor(cyan);
 	Bloco.variable_ID_Comboio=Comboio.ID;
-	Bloco.TipoBL=true;
+	Bloco.TipoBelem=true;
 	Comboio.entradaBlocoABordoLC.take(Bloco);
 	
 }
@@ -12015,15 +11937,14 @@ for( int ii=0; ii<Comboio.carga_a_bordo_CB;ii++){
 	Bloco.set_nome_bloco("CABOT BL");
 	//Bloco.ord//
 	Bloco.variable_ID_Comboio=Comboio.ID;
-	Bloco.TipoBL=true;
+	Bloco.TipoBelem=true;
 	Comboio.entradaBlocoABordoCB.take(Bloco);
 }
 //EnterComboioSaiDeManaus.take(Comboio);
 // comboioSaiDeManausCarregando
 Comboio.oil_tanker_1.setColor("MA_material_10",Color.green);
-Comboio.prioridade=0;
-enterComboioBL.take(Comboio);
-variable_aux_id_combBL++;]]></Code>
+enterComboioBELEM.take(Comboio);
+variable_aux_id_combBelem++;]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -12053,7 +11974,7 @@ variable_aux_id_combBL++;]]></Code>
 				</EmbeddedObject>
 				<EmbeddedObject>
 					<Id>1738967560038</Id>
-					<Name><![CDATA[enterComboioBL]]></Name>
+					<Name><![CDATA[enterComboioBELEM]]></Name>
 					<X>540</X><Y>2050</Y>
 					<Label><X>-5</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -12110,7 +12031,7 @@ variable_aux_id_combBL++;]]></Code>
 						<Parameter>
 							<Name><![CDATA[locationNode]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[PortoBL]]></Code>
+								<Code><![CDATA[PortoBelem]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -12142,9 +12063,6 @@ variable_aux_id_combBL++;]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[agent.instante_cegada_HUB=time();]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onRemove]]></Name>
@@ -12271,16 +12189,9 @@ variable_aux_id_combBL++;]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[movementType]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[self.MOVE_TRIP_TIME]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[tripTime]]></Name>
-							<Value Class="CodeUnitValue">
-								<Code><![CDATA[6]]></Code>
-								<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[setSpeed]]></Name>
@@ -12354,7 +12265,7 @@ variable_aux_id_combBL++;]]></Code>
 						<Parameter>
 							<Name><![CDATA[condition]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[agent.origem==("AM")]]></Code>
+								<Code><![CDATA[agent.origem==("AM3")]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -12399,7 +12310,7 @@ variable_aux_id_combBL++;]]></Code>
 				</EmbeddedObject>
 				<EmbeddedObject>
 					<Id>1738967963426</Id>
-					<Name><![CDATA[moveToBL]]></Name>
+					<Name><![CDATA[moveToBelem]]></Name>
 					<X>720</X><Y>1580</Y>
 					<Label><X>-10</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -12426,7 +12337,7 @@ variable_aux_id_combBL++;]]></Code>
 						<Parameter>
 							<Name><![CDATA[destinationNode]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[PortoBL]]></Code>
+								<Code><![CDATA[PortoBelem]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -12491,16 +12402,9 @@ variable_aux_id_combBL++;]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[movementType]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[self.MOVE_TRIP_TIME]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[tripTime]]></Name>
-							<Value Class="CodeUnitValue">
-								<Code><![CDATA[6]]></Code>
-								<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[setSpeed]]></Name>
@@ -12517,7 +12421,7 @@ variable_aux_id_combBL++;]]></Code>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[traceln("saiu BL")]]></Code>
+								<Code><![CDATA[traceln("saiu belem")]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -12751,7 +12655,7 @@ variable_aux_id_combBL++;]]></Code>
 				</EmbeddedObject>
 				<EmbeddedObject>
 					<Id>1739205620805</Id>
-					<Name><![CDATA[delay_final_comb_BL]]></Name>
+					<Name><![CDATA[delay_final_comb_belem]]></Name>
 					<X>900</X><Y>1580</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -12778,7 +12682,7 @@ variable_aux_id_combBL++;]]></Code>
 						<Parameter>
 							<Name><![CDATA[delayTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[(7*24-(time()-agent.instante_cegada_HUB))>0?(7*24-(time()-agent.instante_cegada_HUB)):0]]></Code>
+								<Code><![CDATA[(7*24-agent.instante_cegada_HUB)>0?(7*24-agent.instante_cegada_HUB):0]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
 							</Value>
 						</Parameter>
@@ -12794,7 +12698,7 @@ variable_aux_id_combBL++;]]></Code>
 						<Parameter>
 							<Name><![CDATA[entityLocation]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[PortoBL]]></Code>
+								<Code><![CDATA[PortoBelem]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -12818,10 +12722,6 @@ traceln("Delay da operacao" +2*agent.capacidade/hUBs.get(0).taxa_Operacao_B1);
 traceln("Delay semanal nav: "+(7*24-(agent.capacidade/hUBs.get(0).taxa_Operacao_B1)));
 */ 
 // inverto o sentido dos blocos para entrada
-
-traceln("======BLchegada "+agent.instante_cegada_HUB);
-	traceln("========atraso BL "+ (7*24-(time()-agent.instante_cegada_HUB)));
-traceln("======BLsaida "+time());
 for(int ii=0;ii<agent.blocos_a_bordoCB.size();ii++){
 	agent.blocos_a_bordoCB.get(ii).tipo_do_bloco_inout=1;
 }
@@ -12920,7 +12820,7 @@ for(int ii=0;ii<agent.blocos_a_bordoCB.size();ii++){
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[enterComboioBL.take(r_AM_HUM.remove(0));]]></Code>
+								<Code><![CDATA[enterComboioBELEM.take(r_AM_HUM.remove(0));]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -13211,7 +13111,7 @@ for(int ii=0;ii<agent.blocos_a_bordoCB.size();ii++){
 				<GISRoute SourceId="1734525421776" TargetId="1734525421778">
 
 					<Id>1734471319122</Id>
-					<Name><![CDATA[gisRouteBL_NS]]></Name>
+					<Name><![CDATA[gisRouteBelem_NS]]></Name>
 					<X>360</X><Y>197</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -13296,7 +13196,7 @@ for(int ii=0;ii<agent.blocos_a_bordoCB.size();ii++){
 				</GISRoute>
 				<GISPoint>
 					<Id>1734525421778</Id>
-					<Name><![CDATA[conexaoBL]]></Name>
+					<Name><![CDATA[conexaoBelem]]></Name>
 					<X>629</X><Y>298</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -13360,7 +13260,7 @@ for(int ii=0;ii<agent.blocos_a_bordoCB.size();ii++){
 				</GISPoint>
 				<GISPoint>
 					<Id>1734525421782</Id>
-					<Name><![CDATA[PortoBL]]></Name>
+					<Name><![CDATA[PortoBelem]]></Name>
 					<X>0</X><Y>0</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -13374,8 +13274,8 @@ for(int ii=0;ii<agent.blocos_a_bordoCB.size();ii++){
 					<LineStyle>SOLID</LineStyle>
 					<Title><![CDATA[Porto, Travessa São Francisco, Centro, Barcarena, Região Geográfica Imediata de Belém, Região Geográfica Intermediária de Belém, Pará, Região Norte, 68445-000, Brasil]]></Title>
 					<ReadOnly>false</ReadOnly>
-					<Latitude>-1.278172552101627</Latitude>	
-					<Longitude>-48.4029901413299</Longitude>
+					<Latitude>-1.0278372812242167</Latitude>	
+					<Longitude>-47.704544517002255</Longitude>
 					<Radius>3</Radius>
 					<FillColor>2144175423</FillColor>
 				</GISPoint>
@@ -13446,7 +13346,7 @@ for(int ii=0;ii<agent.blocos_a_bordoCB.size();ii++){
 						<Point><X>-1.3975563695063276</X><Y>-48.722073719418866</Y></Point>
 						<Point><X>-1.3456820005380952</X><Y>-48.64053348733345</Y></Point>
 						<Point><X>-1.4074370730823293</X><Y>-48.598527913228835</Y></Point>
-						<Point><X>-1.278172552101627</X><Y>-48.4029901413299</Y></Point>
+						<Point><X>-1.0278372812242167</X><Y>-47.704544517002255</Y></Point>
 					</Points>
 					<Bidirectional>true</Bidirectional>
 
@@ -14442,7 +14342,7 @@ for(int ii=0;ii<agent.blocos_a_bordoCB.size();ii++){
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[Entrada Conexao BL]]></Text>
+					<Text><![CDATA[Entrada Conexao Belem]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>10</Size>
@@ -15284,7 +15184,7 @@ for(int ii=0;ii<agent.blocos_a_bordoCB.size();ii++){
 					<Rotation>0.0</Rotation>
 					<ImageFiles>
 						<ImageResourceReference>
-							<PackageName><![CDATA[modelologinBL]]></PackageName>
+							<PackageName><![CDATA[modelologinBelem]]></PackageName>
 							<ClassName><![CDATA[logo_routelab.png]]></ClassName>
 						</ImageResourceReference>
 					</ImageFiles>
@@ -15306,7 +15206,7 @@ for(int ii=0;ii<agent.blocos_a_bordoCB.size();ii++){
 					<Rotation>0.0</Rotation>
 					<ImageFiles>
 						<ImageResourceReference>
-							<PackageName><![CDATA[modelologinBL]]></PackageName>
+							<PackageName><![CDATA[modelologinBelem]]></PackageName>
 							<ClassName><![CDATA[logo_login.png]]></ClassName>
 						</ImageResourceReference>
 					</ImageFiles>
@@ -16702,7 +16602,7 @@ hUBs.get(3).carregadobLC+hUBs.get(2).carregadobLC)]]></TextCode>
 					<LineMaterial>null</LineMaterial>
 					<LineStyle>SOLID</LineStyle>
 					<Width>890</Width>
-					<Height>390</Height>
+					<Height>330</Height>
 					<Rotation>0.0</Rotation>
 					<FillColor>-16711681</FillColor>
 					<FillMaterial>null</FillMaterial>
@@ -19292,7 +19192,7 @@ OPERAÇÃO]]></Text>
 				</Text>
 				<EmbeddedObjectPresentation>
 					<Id>1738965517200</Id>
-					<Name><![CDATA[agentComboioDeBL_presentation]]></Name>
+					<Name><![CDATA[agentComboioDeBelem_presentation]]></Name>
 					<X>0</X><Y>0</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -19365,7 +19265,7 @@ OPERAÇÃO]]></Text>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[BL]]></Text>
+					<Text><![CDATA[BELEM]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>20</Size>
@@ -19387,7 +19287,7 @@ OPERAÇÃO]]></Text>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
 					<Text><![CDATA[0]]></Text>
-					<TextCode><![CDATA[agentPatio.PATIO_blocos_LC_BL.size()]]></TextCode>
+					<TextCode><![CDATA[agentPatio.PATIO_blocos_LC_Belem.size()]]></TextCode>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>20</Size>
@@ -19431,7 +19331,7 @@ OPERAÇÃO]]></Text>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
 					<Text><![CDATA[0]]></Text>
-					<TextCode><![CDATA[agentPatio.PATIO_blocos_CB_BL.size()]]></TextCode>
+					<TextCode><![CDATA[agentPatio.PATIO_blocos_CB_Belem.size()]]></TextCode>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>20</Size>
@@ -19496,7 +19396,7 @@ OPERAÇÃO]]></Text>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[SAÍDA BL]]></Text>
+					<Text><![CDATA[SAÍDA BELEM]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>20</Size>
@@ -19518,7 +19418,7 @@ OPERAÇÃO]]></Text>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
 					<Text><![CDATA[0]]></Text>
-					<TextCode><![CDATA[agentPatio.PATIO_blocos_LC_SAIDA_BL.size()]]></TextCode>
+					<TextCode><![CDATA[agentPatio.PATIO_blocos_LC_SAIDA_BELEM.size()]]></TextCode>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>20</Size>
@@ -19562,7 +19462,7 @@ OPERAÇÃO]]></Text>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
 					<Text><![CDATA[0]]></Text>
-					<TextCode><![CDATA[agentPatio.PATIO_blocos_CB_SAIDA_BL.size()]]></TextCode>
+					<TextCode><![CDATA[agentPatio.PATIO_blocos_CB_SAIDA_BELEM.size()]]></TextCode>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>20</Size>
@@ -19847,7 +19747,7 @@ OPERAÇÃO]]></Text>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
 					<Text><![CDATA[0]]></Text>
-					<TextCode><![CDATA[hUBs.get(2).carregadobLC_BL]]></TextCode>
+					<TextCode><![CDATA[hUBs.get(2).carregadobLC_BELEM]]></TextCode>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>20</Size>
@@ -19891,7 +19791,7 @@ OPERAÇÃO]]></Text>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
 					<Text><![CDATA[0]]></Text>
-					<TextCode><![CDATA[hUBs.get(3).carregadobCB_BL]]></TextCode>
+					<TextCode><![CDATA[hUBs.get(3).carregadobCB_BELEM]]></TextCode>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>20</Size>
@@ -19913,7 +19813,7 @@ OPERAÇÃO]]></Text>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
 					<Text><![CDATA[0]]></Text>
-					<TextCode><![CDATA[(hUBs.get(3).carregadobLC_BL+hUBs.get(2).carregadobLC_BL)]]></TextCode>
+					<TextCode><![CDATA[(hUBs.get(3).carregadobLC_BELEM+hUBs.get(2).carregadobLC_BELEM)]]></TextCode>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>20</Size>
@@ -20108,8 +20008,8 @@ OPERAÇÃO]]></Text>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
 					<Text><![CDATA[0]]></Text>
-					<TextCode><![CDATA[((hUBs.get(3).carregadobCB_BL+hUBs.get(2).carregadobCB_BL)+
-hUBs.get(3).carregadobLC_BL+hUBs.get(2).carregadobLC_BL)]]></TextCode>
+					<TextCode><![CDATA[((hUBs.get(3).carregadobCB_BELEM+hUBs.get(2).carregadobCB_BELEM)+
+hUBs.get(3).carregadobLC_BELEM+hUBs.get(2).carregadobLC_BELEM)]]></TextCode>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>20</Size>
@@ -20131,7 +20031,7 @@ hUBs.get(3).carregadobLC_BL+hUBs.get(2).carregadobLC_BL)]]></TextCode>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
 					<Text><![CDATA[0]]></Text>
-					<TextCode><![CDATA[hUBs.get(2).carregadobCB_BL]]></TextCode>
+					<TextCode><![CDATA[hUBs.get(2).carregadobCB_BELEM]]></TextCode>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>20</Size>
@@ -20153,7 +20053,7 @@ hUBs.get(3).carregadobLC_BL+hUBs.get(2).carregadobLC_BL)]]></TextCode>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
 					<Text><![CDATA[0]]></Text>
-					<TextCode><![CDATA[hUBs.get(3).carregadobLC_BL]]></TextCode>
+					<TextCode><![CDATA[hUBs.get(3).carregadobLC_BELEM]]></TextCode>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>20</Size>
@@ -20217,7 +20117,7 @@ hUBs.get(3).carregadobLC_BL+hUBs.get(2).carregadobLC_BL)]]></TextCode>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
 					<Text><![CDATA[0]]></Text>
-					<TextCode><![CDATA[(hUBs.get(3).carregadobCB_BL+hUBs.get(2).carregadobCB_BL)]]></TextCode>
+					<TextCode><![CDATA[(hUBs.get(3).carregadobCB_BELEM+hUBs.get(2).carregadobCB_BELEM)]]></TextCode>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>20</Size>
@@ -20238,7 +20138,7 @@ hUBs.get(3).carregadobLC_BL+hUBs.get(2).carregadobLC_BL)]]></TextCode>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[BL]]></Text>
+					<Text><![CDATA[BELEM]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>28</Size>
@@ -20450,6 +20350,36 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
+					<Id>1735048148438</Id>
+					<Name><![CDATA[aux_valor_container_saida1]]></Name>
+					<X>2440</X><Y>220</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1735048148440</Id>
+					<Name><![CDATA[aux_valor_container_vazio_saida1]]></Name>
+					<X>2440</X><Y>240</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
 					<Id>1735249296062</Id>
 					<Name><![CDATA[carregadob]]></Name>
 					<X>2280</X><Y>180</Y>
@@ -20625,7 +20555,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1739210580163</Id>
-					<Name><![CDATA[carregadobLC_BL]]></Name>
+					<Name><![CDATA[carregadobLC_BELEM]]></Name>
 					<X>2280</X><Y>120</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -20640,7 +20570,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1739210580165</Id>
-					<Name><![CDATA[carregadobCB_BL]]></Name>
+					<Name><![CDATA[carregadobCB_BELEM]]></Name>
 					<X>2280</X><Y>150</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -20697,7 +20627,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[2.58]]></Code>
+							<Code><![CDATA[triangular(2.7,3.15,3)]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1734473149418</Id>
@@ -20723,7 +20653,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[1.55]]></Code>
+							<Code><![CDATA[triangular(1.5,1.95,1.8)]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1735048148441</Id>
@@ -20745,7 +20675,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[seize]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -20755,7 +20685,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[enter_B1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -20778,7 +20708,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiDescargaParaManaus]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -20788,7 +20718,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[seize]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -20811,7 +20741,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiDescargaParaManaus]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -20821,7 +20751,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[outF]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[Descarrega]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -20845,7 +20775,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[Descarrega]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -20855,7 +20785,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiDescargaParaManaus]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -20882,7 +20812,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiCarga]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -20892,7 +20822,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[outT]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[release]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -20915,7 +20845,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[AtualizaVar]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -20925,7 +20855,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiCarga]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -20948,7 +20878,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[release]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -20958,7 +20888,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[exit]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -20981,7 +20911,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[seize1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -20991,7 +20921,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[enter_B2]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21014,7 +20944,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiDescarga]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21024,7 +20954,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[seize1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21047,7 +20977,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiDescarga]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21057,7 +20987,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[outF]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[DescarregaManaus]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21081,7 +21011,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[DescarregaManaus]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21091,7 +21021,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiDescarga]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21118,7 +21048,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiDescarga]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21128,7 +21058,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[outT]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiCarga1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21151,7 +21081,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[delay]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21161,7 +21091,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[escolhe_carga_DC]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21184,7 +21114,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[CarregaComboio_Saida]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21194,7 +21124,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiCarga1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21221,7 +21151,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiCarga1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21231,7 +21161,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[outT]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[release2]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21254,7 +21184,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[release2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21264,7 +21194,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[exit1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21287,7 +21217,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiDescargaParaManaus]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21297,7 +21227,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[outT]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[AtualizaVar]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21320,7 +21250,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiCarga2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21330,7 +21260,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiCarga]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21354,7 +21284,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[Wait_Navio_Aguarda_Carga_para_sair]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21364,7 +21294,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[release1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21387,7 +21317,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiCarga2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21397,7 +21327,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[outF]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[release1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21421,7 +21351,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[wait_comboio_aguarda_container]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21431,7 +21361,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[escolhe_carga_DC]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21456,7 +21386,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[wait_comboio_aguarda_container]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21466,7 +21396,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiCarga1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21493,7 +21423,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiCarga]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21503,7 +21433,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[Carrega]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21530,7 +21460,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiCarga2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21540,7 +21470,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[outT]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[Carrega]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21563,7 +21493,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[seize2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21573,7 +21503,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[Wait_Navio_Aguarda_Carga_para_sair]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21599,7 +21529,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[seize2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21609,7 +21539,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiCarga]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21636,7 +21566,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[LiberaCarga]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21646,7 +21576,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[TermineiCarga1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21670,7 +21600,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[escolhe_carga_DC]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21680,7 +21610,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[outT]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[CarregaComboio_Saida]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21703,7 +21633,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[delay]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -21713,7 +21643,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentBerco]]></ClassName>
 						<ItemName><![CDATA[LiberaCarga]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -21760,7 +21690,7 @@ import org.opengis.metadata.distribution.Distribution;]]></Import>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 					</ActiveObjectClass>
 				</ContainerLink>
@@ -22442,8 +22372,7 @@ Status_Berco="Parado";]]></Code>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[//set_taxa_Operacao_B1(triangular(2.076923077, 2.423076923,2.307692308));
-//set_taxa_Operacao_B1(3);]]></Code>
+								<Code><![CDATA[set_taxa_Operacao_B1(triangular(2.076923077, 2.423076923,2.307692308));]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -22531,48 +22460,224 @@ Status_Berco="Parado";]]></Code>
 							<Value Class="CodeValue">
 								<Code><![CDATA[Status_Berco="Descarga";
 agent.status_agente.setText("Descarga");
-String origbloc;
-String Tipobloc;
+
 // quem será retirado?
-if (agent.blocos_a_bordo.get(0).TipoBL) {
-    agent.containeres_a_bordo_BL -= 1;
-    origbloc="BL";
+if (agent.blocos_a_bordo.get(0).TipoBelem) {
+    agent.containeres_a_bordo_BELEM -= 1;
 } else {
     agent.containeres_a_bordo_AM -= 1;
-    origbloc="AM";
 }
 
 main.agentPatio.entradaArmazensBlocos.take(agent.blocos_a_bordo.remove(0));
+agent.containeres_a_bordo_AM -= 1;
 
 if (agent.type_vessel == 0) { // LC
     main.PatioLongoCursoManaus += 1;
-    Tipobloc="LC";
-   
-}
- else {
-    main.PatioCabotagemManaus += 1;
-    Tipobloc="CB";
- }
-if (main.hUBs.get(2).Bercocomb.busy()  > 0) {
-    if (main.hUBs.get(2).wait_comboio_aguarda_container.size() > 0 && origbloc == main.hUBs.get(2).var_org_comb_op){
+    // dois berços ocupados
+    if (main.hUBs.get(2).Bercocomb.busy() + main.hUBs.get(3).Bercocomb.busy() > 0) {
+        // tem dois berços aguardando?
+        if (main.hUBs.get(2).wait_comboio_aguarda_container.size() > 0 &&
+            main.hUBs.get(3).wait_comboio_aguarda_container.size() > 0) {
 
-            main.hUBs.get(2).wait_comboio_aguarda_container.freeAll();
-            main.hUBs.get(2).Carga_liberada_Aguardo.equals(Tipobloc);
-    }
-    else{
-        if (main.hUBs.get(3).Bercocomb.busy()  > 0) {
-            if (main.hUBs.get(3).wait_comboio_aguarda_container.size() > 0 && origbloc == main.hUBs.get(3).var_org_comb_op){
-        
-                    main.hUBs.get(3).wait_comboio_aguarda_container.freeAll();
-                    main.hUBs.get(3).Carga_liberada_Aguardo.equals(Tipobloc);
+            int idcomb1 = main.hUBs.get(2).var_id_comb_operando;
+            int idcomb2 = main.hUBs.get(3).var_id_comb_operando;
+            String origemcomb1 = main.hUBs.get(2).var_org_comb_op;
+            String origemcomb2 = main.hUBs.get(3).var_org_comb_op;
+            int DemAM = 0; // demanda a ser atendida de AM
+            int DemBL = 0; // demanda a ser atendida de BL
+
+            if (origemcomb1.equals("AM")) {
+                DemAM += main.agentComboio.get(idcomb1).capacidadeLC - main.agentComboio.get(idcomb1).carga_a_bordo_LC;
+            } else {
+                DemBL += main.agentComboioDeBelem.get(idcomb1).capacidadeLC - main.agentComboioDeBelem.get(idcomb1).carga_a_bordo_LC;
+            }
+            if (origemcomb2.equals("AM")) {
+                DemAM += main.agentComboio.get(idcomb2).capacidadeLC - main.agentComboio.get(idcomb2).carga_a_bordo_LC;
+            } else {
+                DemBL += main.agentComboioDeBelem.get(idcomb2).capacidadeLC - main.agentComboioDeBelem.get(idcomb2).carga_a_bordo_LC;
+            }
+
+            if (agent.capacidade_AM + main.agentPatio.PATIO_blocos_LC_MANAUS.size() >= DemAM + DemBL) {
+                
+                main.hUBs.get(2).wait_comboio_aguarda_container.freeAll(); traceln("BIRD");
+                main.hUBs.get(3).wait_comboio_aguarda_container.freeAll(); traceln("BIRD");
+                main.hUBs.get(2).Carga_liberada_Aguardo.equals("LC");
+                main.hUBs.get(3).Carga_liberada_Aguardo.equals("LC");
+            } else if (agent.capacidade_AM + main.agentPatio.PATIO_blocos_LC_MANAUS.size() >= DemAM) {
+                main.hUBs.get(2).wait_comboio_aguarda_container.freeAll(); traceln("BIRD");
+                main.hUBs.get(2).Carga_liberada_Aguardo.equals("LC");
+            } else if (agent.capacidade_BELEM + main.agentPatio.PATIO_blocos_CB_Belem.size() >= DemBL) {
+                main.hUBs.get(3).wait_comboio_aguarda_container.freeAll(); traceln("BIRD");
+                main.hUBs.get(3).Carga_liberada_Aguardo.equals("LC");
+            }
+            // cabe só em um ?
+            // se chegou aqui, provalmente sao diferentes
+            int DemComb1LC =main.agentComboio.get(idcomb1).capacidadeLC - main.agentComboio.get(idcomb1).carga_a_bordo_LC;
+            int DemComb2LC =main.agentComboio.get(idcomb2).capacidadeLC - main.agentComboio.get(idcomb2).carga_a_bordo_LC;
+
+            if(DemComb1LC>DemComb2LC) {      
+                main.hUBs.get(2).wait_comboio_aguarda_container.freeAll(); traceln("BIRD");
+                main.hUBs.get(2).Carga_liberada_Aguardo.equals("LC");
+            }
+
+        } else {
+            // só um berço aguardando?
+            // berço 2?
+            if (main.hUBs.get(2).Bercocomb.busy() == 1) {
+                // tem alguém aguardando
+                if (main.hUBs.get(2).wait_comboio_aguarda_container.size() == 1) {
+
+                    int idcomb1 = main.hUBs.get(2).var_id_comb_operando;
+                    String origemcomb1 = main.hUBs.get(2).var_org_comb_op;
+                    int DemAM = 0; // demanda a ser atendida de AM
+                    int DemBL = 0; // demanda a ser atendida de BL
+
+                    if (origemcomb1.equals("AM")) {
+                        DemAM += main.agentComboio.get(idcomb1).capacidadeLC - main.agentComboio.get(idcomb1).carga_a_bordo_LC;
+                        if (agent.capacidade_AM + main.agentPatio.PATIO_blocos_LC_MANAUS.size() >= DemAM) {
+                            main.hUBs.get(2).wait_comboio_aguarda_container.freeAll(); traceln("BIRD");
+                            main.hUBs.get(2).Carga_liberada_Aguardo=("LC");
+                        }
+                    } else {
+                        traceln("valor da soma " + agent.capacidade_BELEM + main.agentPatio.PATIO_blocos_CB_Belem.size());
+                        DemBL += main.agentComboioDeBelem.get(idcomb1).capacidadeLC - main.agentComboioDeBelem.get(idcomb1).carga_a_bordo_LC;
+                        if (agent.capacidade_BELEM + main.agentPatio.PATIO_blocos_CB_Belem.size() >= DemBL) {
+                            main.hUBs.get(2).wait_comboio_aguarda_container.freeAll(); traceln("BIRD");
+                            main.hUBs.get(2).Carga_liberada_Aguardo= "LC";
+                            traceln("libero");
+                        }
+                    }
+                }
+            } else { // deve ser o ultimo
+                // tem alguém aguardando?
+                if (main.hUBs.get(3).wait_comboio_aguarda_container.size() == 1) {
+
+                    int idcomb1 = main.hUBs.get(3).var_id_comb_operando;
+                    String origemcomb1 = main.hUBs.get(3).var_org_comb_op;
+                    int DemAM = 0; // demanda a ser atendida de AM
+                    int DemBL = 0; // demanda a ser atendida de BL
+
+                    if (origemcomb1.equals("AM")) {
+                        DemAM += main.agentComboio.get(idcomb1).capacidadeLC - main.agentComboio.get(idcomb1).carga_a_bordo_LC;
+                    } else {
+                        DemBL += main.agentComboioDeBelem.get(idcomb1).capacidadeLC - main.agentComboioDeBelem.get(idcomb1).carga_a_bordo_LC;
+                    }
+
+                    if (agent.capacidade_AM + main.agentPatio.PATIO_blocos_LC_MANAUS.size() >= DemAM) {
+                        main.hUBs.get(3).wait_comboio_aguarda_container.freeAll(); traceln("BIRD");
+                        main.hUBs.get(3).Carga_liberada_Aguardo.equals("LC");
+                    }
+                    if (agent.capacidade_BELEM + main.agentPatio.PATIO_blocos_CB_Belem.size() >= DemBL) {
+                        main.hUBs.get(3).wait_comboio_aguarda_container.freeAll(); traceln("BIRD");
+                        main.hUBs.get(3).Carga_liberada_Aguardo.equals("LC");
+                    }
+                }
             }
         }
-
-
     }
+} else {
+    main.PatioCabotagemManaus += 1;
+    // dois berços ocupados?
+    if (main.hUBs.get(2).Bercocomb.busy() + main.hUBs.get(3).Bercocomb.busy() > 0) {
+        // tem alguém aguardando?
+        if (main.hUBs.get(2).wait_comboio_aguarda_container.size() > 0 &&
+            main.hUBs.get(3).wait_comboio_aguarda_container.size() > 0) {
 
-} 
+            int idcomb1 = main.hUBs.get(2).var_id_comb_operando;
+            int idcomb2 = main.hUBs.get(3).var_id_comb_operando;
+            String origemcomb1 = main.hUBs.get(2).var_org_comb_op;
+            String origemcomb2 = main.hUBs.get(3).var_org_comb_op;
+            int DemAM = 0; // demanda a ser atendida de AM
+            int DemBL = 0; // demanda a ser atendida de BL
 
+            if (origemcomb1.equals("AM")) {
+                DemAM += main.agentComboio.get(idcomb1).capacidadeCB - main.agentComboio.get(idcomb1).carga_a_bordo_CB;
+            } else {
+                DemBL += main.agentComboioDeBelem.get(idcomb1).capacidadeCB - main.agentComboioDeBelem.get(idcomb1).carga_a_bordo_CB;
+            }
+            if (origemcomb2.equals("AM")) {
+                DemAM += main.agentComboio.get(idcomb2).capacidadeCB - main.agentComboio.get(idcomb2).carga_a_bordo_CB;
+            } else {
+                DemBL += main.agentComboioDeBelem.get(idcomb2).capacidadeCB - main.agentComboioDeBelem.get(idcomb2).carga_a_bordo_CB;
+            }
+
+            if (agent.capacidade_AM + main.agentPatio.PATIO_blocos_CB_MANAUS.size() >= DemAM + DemBL) {
+                main.hUBs.get(2).wait_comboio_aguarda_container.freeAll(); traceln("BIRD");
+                main.hUBs.get(2).Carga_liberada_Aguardo.equals("CB");
+                main.hUBs.get(3).wait_comboio_aguarda_container.freeAll(); traceln("BIRD");
+                main.hUBs.get(3).Carga_liberada_Aguardo.equals("CB");
+            } else if (agent.capacidade_AM + main.agentPatio.PATIO_blocos_CB_MANAUS.size() >= DemAM) {
+                main.hUBs.get(2).wait_comboio_aguarda_container.freeAll(); traceln("BIRD");
+                main.hUBs.get(2).Carga_liberada_Aguardo.equals("CB");
+            } else if (agent.capacidade_BELEM + main.agentPatio.PATIO_blocos_CB_Belem.size() >= DemBL) {
+                main.hUBs.get(3).wait_comboio_aguarda_container.freeAll(); traceln("BIRD");
+                main.hUBs.get(3).Carga_liberada_Aguardo.equals("CB");
+            }
+            // cabe só em um ?
+            // se chegou aqui, provalmente sao diferentes
+            int DemComb1CB =main.agentComboio.get(idcomb1).capacidadeCB - main.agentComboio.get(idcomb1).carga_a_bordo_CB;
+            int DemComb2CB =main.agentComboio.get(idcomb2).capacidadeCB - main.agentComboio.get(idcomb2).carga_a_bordo_CB;
+
+            if(DemComb1CB>DemComb2CB) {      
+                main.hUBs.get(2).wait_comboio_aguarda_container.freeAll(); traceln("BIRD");
+                main.hUBs.get(2).Carga_liberada_Aguardo.equals("CB");
+            }            
+            
+        } else {
+            // só um berço aguardando?
+            // berço 2?
+            if (main.hUBs.get(2).Bercocomb.busy() == 1) {
+                // tem alguém aguardando
+                if (main.hUBs.get(2).wait_comboio_aguarda_container.size() == 1) {
+
+                    int idcomb1 = main.hUBs.get(2).var_id_comb_operando;
+                    String origemcomb1 = main.hUBs.get(2).var_org_comb_op;
+                    int DemAM = 0; // demanda a ser atendida de AM
+                    int DemBL = 0; // demanda a ser atendida de BL
+
+                    if (origemcomb1.equals("AM")) {
+                        DemAM += main.agentComboio.get(idcomb1).capacidadeCB - main.agentComboio.get(idcomb1).carga_a_bordo_CB;
+                    } else {
+                        DemBL += main.agentComboioDeBelem.get(idcomb1).capacidadeCB - main.agentComboioDeBelem.get(idcomb1).carga_a_bordo_CB;
+                    }
+
+                    if (agent.capacidade_AM + main.agentPatio.PATIO_blocos_CB_MANAUS.size() >= DemAM) {
+                        main.hUBs.get(2).wait_comboio_aguarda_container.freeAll(); traceln("BIRD");
+                        main.hUBs.get(2).Carga_liberada_Aguardo.equals("CB");
+                    }
+                    if (agent.capacidade_BELEM + main.agentPatio.PATIO_blocos_CB_Belem.size() >= DemBL) {
+                        main.hUBs.get(2).wait_comboio_aguarda_container.freeAll(); traceln("BIRD");
+                        main.hUBs.get(2).Carga_liberada_Aguardo.equals("CB");
+                    }
+                }
+            } else { // deve ser o ultimo
+                // tem alguém aguardando?
+                if (main.hUBs.get(3).wait_comboio_aguarda_container.size() == 1) {
+
+                    int idcomb1 = main.hUBs.get(3).var_id_comb_operando;
+                    String origemcomb1 = main.hUBs.get(3).var_org_comb_op;
+                    int DemAM = 0; // demanda a ser atendida de AM
+                    int DemBL = 0; // demanda a ser atendida de BL
+
+                    if (origemcomb1.equals("AM")) {
+                        DemAM += main.agentComboio.get(idcomb1).capacidadeCB - main.agentComboio.get(idcomb1).carga_a_bordo_CB;
+                    } else {
+                        DemBL += main.agentComboioDeBelem.get(idcomb1).capacidadeCB - main.agentComboioDeBelem.get(idcomb1).carga_a_bordo_CB;
+                    }
+
+                    if (agent.capacidade_AM + main.agentPatio.PATIO_blocos_CB_MANAUS.size() >= DemAM) {
+                        main.hUBs.get(3).wait_comboio_aguarda_container.freeAll(); traceln("BIRD");
+                        main.hUBs.get(3).Carga_liberada_Aguardo.equals("CB");
+                    }
+                    if (agent.capacidade_BELEM + main.agentPatio.PATIO_blocos_CB_Belem.size() >= DemBL) {
+                        main.hUBs.get(3).wait_comboio_aguarda_container.freeAll(); traceln("BIRD");
+                        main.hUBs.get(3).Carga_liberada_Aguardo.equals("CB");
+                    }
+                }
+            }
+        }
+    }
+}
 ]]></Code>
 							</Value>
 						</Parameter>
@@ -22674,11 +22779,11 @@ if(agent.type_vessel==0){
 		agent.entradaBlocoABordo.take(main.agentPatio.PATIO_blocos_LC_SAIDA.remove(0));	
 		agent.containeres_a_bordo_AM++;
 	}else{
-		if(main.agentPatio.PATIO_blocos_LC_SAIDA_BL.size()>0 && agent.containeres_a_bordo_BL< agent.capacidade_BL){
+		if(main.agentPatio.PATIO_blocos_LC_SAIDA_BELEM.size()>0 && agent.containeres_a_bordo_BELEM< agent.capacidade_BELEM){
 		// bloco BL LC	
-			main.agentPatio.PATIO_blocos_LC_SAIDA_BL.get(0).instante_A_BORDO_NAVIO_HUB= time()+1/taxa_Operacao_B1;
-			agent.entradaBlocoABordo.take(main.agentPatio.PATIO_blocos_LC_SAIDA_BL.remove(0));	
-			agent.containeres_a_bordo_BL++;
+			main.agentPatio.PATIO_blocos_LC_SAIDA_BELEM.get(0).instante_A_BORDO_NAVIO_HUB= time()+1/taxa_Operacao_B1;
+			agent.entradaBlocoABordo.take(main.agentPatio.PATIO_blocos_LC_SAIDA_BELEM.remove(0));	
+			agent.containeres_a_bordo_BELEM++;
 	    }
 	main.PatioLongoCursoSaida-=1;
     }
@@ -22692,11 +22797,11 @@ if(agent.type_vessel==0){
 		agent.entradaBlocoABordo.take(main.agentPatio.PATIO_blocos_CB_SAIDA.remove(0));	
 		agent.containeres_a_bordo_AM++;
 	}else{
-		if(main.agentPatio.PATIO_blocos_CB_SAIDA_BL.size()>0 && agent.containeres_a_bordo_BL< agent.capacidade_BL){
+		if(main.agentPatio.PATIO_blocos_CB_SAIDA_BELEM.size()>0 && agent.containeres_a_bordo_BELEM< agent.capacidade_BELEM){
 		// bloco BL CB
-			main.agentPatio.PATIO_blocos_CB_SAIDA_BL.get(0).instante_A_BORDO_NAVIO_HUB= time()+1/taxa_Operacao_B1;
-			agent.entradaBlocoABordo.take(main.agentPatio.PATIO_blocos_CB_SAIDA_BL.remove(0));	
-			agent.containeres_a_bordo_BL++;
+			main.agentPatio.PATIO_blocos_CB_SAIDA_BELEM.get(0).instante_A_BORDO_NAVIO_HUB= time()+1/taxa_Operacao_B1;
+			agent.entradaBlocoABordo.take(main.agentPatio.PATIO_blocos_CB_SAIDA_BELEM.remove(0));	
+			agent.containeres_a_bordo_BELEM++;
 	    }
 	main.PatioLongoCursoSaida-=1;
     }
@@ -22773,7 +22878,7 @@ Status_Berco="Carga";]]></Code>
 							<Name><![CDATA[condition]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[agent.capacidade_AM<=agent.containeres_a_bordo_AM && 
-agent.capacidade_BL<=agent.containeres_a_bordo_BL]]></Code>
+agent.capacidade_BELEM<=agent.containeres_a_bordo_BELEM]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -22788,11 +22893,10 @@ agent.capacidade_BL<=agent.containeres_a_bordo_BL]]></Code>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[//set_taxa_Operacao_B1(triangular(2.076923077, 2.423076923,2.307692308));
-//set_taxa_Operacao_B1(3);
+								<Code><![CDATA[set_taxa_Operacao_B1(triangular(2.076923077, 2.423076923,2.307692308));
 //if(agent.type_vessel==0){
-//traceln("a bordo AM "+agent.containeres_a_bordo_AM+ " A bordo BL "+agent.containeres_a_bordo_BL);
-//traceln("CAPAC AM "+agent.capacidade_AM+ " CAPAC BL "+agent.capacidade_BL);
+//traceln("a bordo AM "+agent.containeres_a_bordo_AM+ " A bordo BL "+agent.containeres_a_bordo_BELEM);
+//traceln("CAPAC AM "+agent.capacidade_AM+ " CAPAC BL "+agent.capacidade_BELEM);
 //}]]></Code>
 							</Value>
 						</Parameter>
@@ -22858,7 +22962,7 @@ agent.capacidade_BL<=agent.containeres_a_bordo_BL]]></Code>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[agent.containeres_a_bordo_AM=0;
-agent.containeres_a_bordo_BL=0;]]></Code>
+agent.containeres_a_bordo_BELEM=0;]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -23664,15 +23768,11 @@ Status_Berco="Parado";]]></Code>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[//set_taxa_Operacao_B2(triangular(1.154,1.500,1.385));
-//set_taxa_Operacao_B2(1.8);]]></Code>
+								<Code><![CDATA[set_taxa_Operacao_B2(triangular(1.154,1.500,1.385));]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExitTrue]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[traceln("Terminei Descarga Comb "+ agent.origem+" ID: "+ agent.ID+" T: "+time());]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExitFalse]]></Name>
@@ -23926,13 +24026,13 @@ main.hUBs.get(0).Wait_Navio_Aguarda_Carga_para_sair.freeAll();
 
 }
 else{
-// carrega para BL
+// carrega para BELEM
 	if(variable_liberado_cargaLC)
 	{
         Status_Berco="CargaLC_BL";
-        carregadobLC_BL++;
+        carregadobLC_BELEM++;
         agent.carga_a_bordo_LC+=1;
-        agent.entradaBlocoABordoLC.take(main.agentPatio.PATIO_blocos_LC_BL.remove(0));
+        agent.entradaBlocoABordoLC.take(main.agentPatio.PATIO_blocos_LC_Belem.remove(0));
 	} 
 	else{
 		if(variable_liberado_cargaCB){
@@ -23940,7 +24040,7 @@ else{
 			Status_Berco="CargaCB_BL";
 			carregadobCB++;
 			agent.carga_a_bordo_CB+=1;
-			agent.entradaBlocoABordoCB.take(main.agentPatio.PATIO_blocos_CB_BL.remove(0));
+			agent.entradaBlocoABordoCB.take(main.agentPatio.PATIO_blocos_CB_Belem.remove(0));
 		}
 	}
 }
@@ -24032,9 +24132,7 @@ agent.status_agente.setText("Carga");
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[//set_taxa_Operacao_B2(triangular(1.154,1.500,1.385));
-//set_taxa_Operacao_B2(1.8);
-]]></Code>
+								<Code><![CDATA[set_taxa_Operacao_B2(triangular(1.154,1.500,1.385));]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -24195,10 +24293,10 @@ agent.status_agente.setText("Carga");
 							<Name><![CDATA[condition]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[(agent.type_vessel==0 && ((main.agentPatio.PATIO_blocos_LC_SAIDA.size()>0 && agent.containeres_a_bordo_AM< agent.capacidade_AM)||//AM
-(main.agentPatio.PATIO_blocos_LC_SAIDA_BL.size()>0 && agent.containeres_a_bordo_BL< agent.capacidade_BL))) ||//BL
+(main.agentPatio.PATIO_blocos_LC_SAIDA_BELEM.size()>0 && agent.containeres_a_bordo_BELEM< agent.capacidade_BELEM))) ||//BL
 
 (agent.type_vessel==1 && ((main.agentPatio.PATIO_blocos_CB_SAIDA.size()>0 && agent.containeres_a_bordo_AM< agent.capacidade_AM)||//AM
-(main.agentPatio.PATIO_blocos_CB_SAIDA_BL.size()>0 && agent.containeres_a_bordo_BL< agent.capacidade_BL)) )//BL
+(main.agentPatio.PATIO_blocos_CB_SAIDA_BELEM.size()>0 && agent.containeres_a_bordo_BELEM< agent.capacidade_BELEM)) )//BL
 ]]></Code>
 							</Value>
 						</Parameter>
@@ -24496,6 +24594,7 @@ Status_Berco="Aguardando p Carga";]]></Code>
 								<Code><![CDATA[agent.status_agente.setText("Aguardando Carga");
 Status_Berco="Aguardando p Carga";
 Carga_liberada_Aguardo="";
+traceln("AG LC: "+variable_liberado_cargaLC +" CB: "+variable_liberado_cargaCB);
 ]]></Code>
 							</Value>
 						</Parameter>
@@ -25107,18 +25206,22 @@ Carga_liberada_Aguardo="";
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[variable_liberado_cargaLC=false;
+								<Code><![CDATA[//origem
+variable_liberado_cargaLC=false;
 variable_liberado_cargaCB=false;
-
 if(Carga_liberada_Aguardo== ("LC")){
 	if( agent.blocos_a_bordoLC.size()<agent.capacidadeLC){
 		variable_liberado_cargaLC=true;
+		traceln("setado true "+agent.blocos_a_bordoLC.size());
 	}
 	else{
 		variable_liberado_cargaLC=false;
+		traceln("setado false "+agent.blocos_a_bordoLC.size());
 	}
-} 
+}
 else{
+if(main.agentComboio.get(0).origem)
+if(main.hUBs.get(3).var_id_comb_operando)
 	if(Carga_liberada_Aguardo== ("CB")){
 		if(agent.blocos_a_bordoCB.size()<agent.capacidadeCB){
 			variable_liberado_cargaCB=true;
@@ -25129,93 +25232,34 @@ else{
 	}
 	else{// teste de carga no patio
 		if(agent.origem=="AM"){
-		//traceln("patio");
 			// tem de LC
 			if( ((agent.blocos_a_bordoLC.size()<agent.capacidadeLC) &&
 			(main.agentPatio.PATIO_blocos_LC_MANAUS.size()>0) )){
-				if(ID_BERCO==2){
-					if(main.hUBs.get(3).Bercocomb.busy()>0){
 
-						int idcomb3 = main.hUBs.get(3).var_id_comb_operando;
-						if( main.hUBs.get(3).var_org_comb_op=="AM" &&
-						main.hUBs.get(3).Status_Berco!= ("CargaLC") ){
-							variable_liberado_cargaLC=true;
-						}
-                        else{/// esta ocupado mas com outro veiculo
-                        	variable_liberado_cargaLC=true;
-                    	}						
-					}
-					else{// só tem um berço comb ocupado
-						variable_liberado_cargaLC=true;
-					}
-					
-                }else{// berco 3
-                    if(main.hUBs.get(2).Bercocomb.busy()>0){
-
-                        int idcomb2 = main.hUBs.get(2).var_id_comb_operando;
-                        if( main.hUBs.get(2).var_org_comb_op=="AM" &&
-                        main.hUBs.get(2).Status_Berco!= ("CargaLC") ){
-                            variable_liberado_cargaLC=true;
-                        }
-                        else{/// esta ocupado mas com outro veiculo
-                        	variable_liberado_cargaLC=true;
-                    	}
-                    }
-                    else{// só tem um berço comb ocupado
-                        variable_liberado_cargaLC=true;
-                    }
-			    }
-            }
+				variable_liberado_cargaLC=true;
+			}
+			else{
+				variable_liberado_cargaLC=false;
+				if((agent.blocos_a_bordoCB.size()<agent.capacidadeCB)&&
+				(main.agentPatio.PATIO_blocos_CB_MANAUS.size()>0) ){
+					variable_liberado_cargaCB=true;
+				}
+				else{
+					variable_liberado_cargaCB=false;
+				}
 			
-			// teste cb
-			if( ((agent.blocos_a_bordoCB.size()<agent.capacidadeCB) &&
-			(main.agentPatio.PATIO_blocos_CB_MANAUS.size()>0) )){
-                if(ID_BERCO==2){
-                    if(main.hUBs.get(3).Bercocomb.busy()>0){
-                
-                        int idcomb3 = main.hUBs.get(3).var_id_comb_operando;
-                        if( main.hUBs.get(3).var_org_comb_op=="AM" &&
-                        main.hUBs.get(3).Status_Berco!= ("CargaCB") ){
-                            variable_liberado_cargaCB=true;
-                        }
-                        else{/// esta ocupado mas com outro veiculo
-                        	variable_liberado_cargaCB=true;
-                    	}                        
-                    }
-                    else{// só tem um berço comb ocupado
-                        variable_liberado_cargaCB=true;
-                    }
-                    
-                }else{// berco 3
-                    if(main.hUBs.get(2).Bercocomb.busy()>0){
-                
-                        int idcomb2 = main.hUBs.get(2).var_id_comb_operando;
-                        if( main.hUBs.get(2).var_org_comb_op=="AM" &&
-                        main.hUBs.get(2).Status_Berco!= ("CargaCB") ){
-                            variable_liberado_cargaCB=true;
-                        }
-                        else{/// esta ocupado mas com outro veiculo
-                        	variable_liberado_cargaCB=true;
-                    	}                        
-                    }
-                    else{// só tem um berço comb ocupado
-                        variable_liberado_cargaCB=true;
-                    }
-                }
-			}			
-
-			
-			
+			}
+			//if(main.agentNavio.get(0).containeres_a_bordo_AM
 		}
-		else{// BL
+		else{// BELEM
 			if( ((agent.blocos_a_bordoLC.size()<agent.capacidadeLC)&&
-			(main.agentPatio.PATIO_blocos_LC_BL.size()>0) )){
+			(main.agentPatio.PATIO_blocos_LC_Belem.size()>0) )){
 				variable_liberado_cargaLC=true;
 			}
 			else{
 				variable_liberado_cargaLC=false;
 				if( ((agent.blocos_a_bordoCB.size()<agent.capacidadeCB)&&
-				(main.agentPatio.PATIO_blocos_CB_BL.size()>0) )){
+				(main.agentPatio.PATIO_blocos_CB_Belem.size()>0) )){
 					variable_liberado_cargaCB=true;
 				}
 				else{
@@ -25229,28 +25273,6 @@ else{
 	}
 }
 
-if(ID_BERCO==2){
-	if(main.hUBs.get(3).Bercocomb.busy()>0){
-	if(main.hUBs.get(3).var_org_comb_op==main.hUBs.get(2).var_org_comb_op){
-	//traceln("zera");
-		if(main.hUBs.get(3).variable_liberado_cargaLC){
-			main.hUBs.get(3).variable_liberado_cargaLC=false;}
-		if(main.hUBs.get(3).variable_liberado_cargaCB){
-			main.hUBs.get(3).variable_liberado_cargaCB=false;}
-		}
-	}
-}
-else{
-	if(main.hUBs.get(2).Bercocomb.busy()>0){
-		if(main.hUBs.get(3).var_org_comb_op==main.hUBs.get(2).var_org_comb_op){
-		//traceln("zera");
-			if(main.hUBs.get(2).variable_liberado_cargaLC){
-				main.hUBs.get(2).variable_liberado_cargaLC=false;}
-			if(main.hUBs.get(2).variable_liberado_cargaCB){
-				main.hUBs.get(2).variable_liberado_cargaCB=false;}
-		}
-	}
-}
 ]]></Code>
 							</Value>
 						</Parameter>
@@ -25392,7 +25414,7 @@ else{
 					<X>0</X><Y>0</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[3d/container40.dae]]></ClassName>
 					</ResourceReference>
 					<ColorTable>
@@ -26038,18 +26060,6 @@ else{
 						<Type><![CDATA[double]]></Type>        
 					</Properties>
 				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1739947245249</Id>
-					<Name><![CDATA[prioridade]]></Name>
-					<X>260</X><Y>160</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[int]]></Type>        
-					</Properties>
-				</Variable>
 				<Variable Class="Parameter">
 					<Id>1734525676652</Id>
 					<Name><![CDATA[capacidadeCB]]></Name>
@@ -26109,7 +26119,7 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentComboio]]></ClassName>
 						<ItemName><![CDATA[blocos_a_bordoLC]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -26119,7 +26129,7 @@ else{
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentComboio]]></ClassName>
 						<ItemName><![CDATA[entradaBlocoABordoLC]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -26142,7 +26152,7 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentComboio]]></ClassName>
 						<ItemName><![CDATA[blocos_a_bordoCB]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -26152,7 +26162,7 @@ else{
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentComboio]]></ClassName>
 						<ItemName><![CDATA[entradaBlocoABordoCB]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -26851,7 +26861,7 @@ else{
 					<AgentLinkBidirectional>true</AgentLinkBidirectional>
 					<MessageType><![CDATA[Object]]></MessageType>
 					<StatechartReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentComboio]]></ClassName>
 						<ItemName><![CDATA[statechart]]></ItemName>
 					</StatechartReference>
@@ -26874,7 +26884,7 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 					</ActiveObjectClass>
 				</ContainerLink>
@@ -27346,7 +27356,7 @@ else{
 					<X>0</X><Y>0</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[3d/oil_tanker_1.dae]]></ClassName>
 					</ResourceReference>
 					<ColorTable>
@@ -27906,7 +27916,7 @@ else{
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1739209049630</Id>
-					<Name><![CDATA[containeres_a_bordo_BL]]></Name>
+					<Name><![CDATA[containeres_a_bordo_BELEM]]></Name>
 					<X>160</X><Y>460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -27930,7 +27940,7 @@ else{
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1739211577365</Id>
-					<Name><![CDATA[capacidade_BL]]></Name>
+					<Name><![CDATA[capacidade_BELEM]]></Name>
 					<X>160</X><Y>320</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -27963,7 +27973,7 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentNavio]]></ClassName>
 						<ItemName><![CDATA[blocos_a_bordo]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -27973,7 +27983,7 @@ else{
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentNavio]]></ClassName>
 						<ItemName><![CDATA[entradaBlocoABordo]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -28672,7 +28682,7 @@ else{
 					<AgentLinkBidirectional>true</AgentLinkBidirectional>
 					<MessageType><![CDATA[Object]]></MessageType>
 					<StatechartReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentNavio]]></ClassName>
 						<ItemName><![CDATA[statechart]]></ItemName>
 					</StatechartReference>
@@ -28695,7 +28705,7 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 					</ActiveObjectClass>
 				</ContainerLink>
@@ -28953,7 +28963,7 @@ else{
 					<X>0</X><Y>0</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[3d/container_ship_loaded.dae]]></ClassName>
 					</ResourceReference>
 					<ColorTable>
@@ -29366,7 +29376,7 @@ else{
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1739208448292</Id>
-					<Name><![CDATA[TipoBL]]></Name>
+					<Name><![CDATA[TipoBelem]]></Name>
 					<X>80</X><Y>200</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -29460,7 +29470,7 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 					</ActiveObjectClass>
 				</ContainerLink>
@@ -29492,7 +29502,7 @@ else{
 					<X>0</X><Y>0</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[3d/container.dae]]></ClassName>
 					</ResourceReference>
 					<ColorTable>
@@ -29663,7 +29673,7 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 						<ItemName><![CDATA[PATIO_blocos_CB_MANAUS]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -29673,7 +29683,7 @@ else{
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 						<ItemName><![CDATA[designacao_blocos_containers]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -29696,7 +29706,7 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 						<ItemName><![CDATA[PATIO_blocos_LC_SAIDA]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -29706,7 +29716,7 @@ else{
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 						<ItemName><![CDATA[designacao_blocos_containers]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -29729,7 +29739,7 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 						<ItemName><![CDATA[PATIO_blocos_CB_SAIDA]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -29739,7 +29749,7 @@ else{
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 						<ItemName><![CDATA[designacao_blocos_containers]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -29762,7 +29772,7 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 						<ItemName><![CDATA[PATIO_blocos_LC_MANAUS]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -29772,7 +29782,7 @@ else{
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 						<ItemName><![CDATA[designacao_blocos_containers]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -29795,7 +29805,7 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 						<ItemName><![CDATA[designacao_blocos_containers]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -29805,7 +29815,7 @@ else{
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 						<ItemName><![CDATA[selectOutput]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -29828,7 +29838,7 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 						<ItemName><![CDATA[selectOutput]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -29838,7 +29848,7 @@ else{
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 						<ItemName><![CDATA[entradaArmazensBlocos]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -29861,9 +29871,9 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
-						<ItemName><![CDATA[PATIO_blocos_CB_BL]]></ItemName>
+						<ItemName><![CDATA[PATIO_blocos_CB_Belem]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
@@ -29871,7 +29881,7 @@ else{
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 						<ItemName><![CDATA[designacao_blocos_containersBL]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -29894,9 +29904,9 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
-						<ItemName><![CDATA[PATIO_blocos_LC_SAIDA_BL]]></ItemName>
+						<ItemName><![CDATA[PATIO_blocos_LC_SAIDA_BELEM]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
@@ -29904,7 +29914,7 @@ else{
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 						<ItemName><![CDATA[designacao_blocos_containersBL]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -29927,9 +29937,9 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
-						<ItemName><![CDATA[PATIO_blocos_CB_SAIDA_BL]]></ItemName>
+						<ItemName><![CDATA[PATIO_blocos_CB_SAIDA_BELEM]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
@@ -29937,7 +29947,7 @@ else{
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 						<ItemName><![CDATA[designacao_blocos_containersBL]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -29960,9 +29970,9 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
-						<ItemName><![CDATA[PATIO_blocos_LC_BL]]></ItemName>
+						<ItemName><![CDATA[PATIO_blocos_LC_Belem]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
@@ -29970,7 +29980,7 @@ else{
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 						<ItemName><![CDATA[designacao_blocos_containersBL]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -29993,7 +30003,7 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 						<ItemName><![CDATA[selectOutput]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -30003,7 +30013,7 @@ else{
 						<ItemName><![CDATA[outF]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 						<ItemName><![CDATA[designacao_blocos_containersBL]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -30051,7 +30061,7 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 					</ActiveObjectClass>
 				</ContainerLink>
@@ -30709,12 +30719,12 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPortainer]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[modelologinBL]]></PackageName>
+							<PackageName><![CDATA[modelologinBelem]]></PackageName>
 							<ClassName><![CDATA[AgentPortainer]]></ClassName>
 							<ItemName><![CDATA[1736698588414]]></ItemName>
 						</GenericParameterSubstituteReference>
@@ -30775,7 +30785,7 @@ else{
 						<Parameter>
 							<Name><![CDATA[condition]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[!agent.TipoBL]]></Code>
+								<Code><![CDATA[!agent.TipoBelem]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -30848,28 +30858,28 @@ else{
 							<Name><![CDATA[condition1]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[(agent.tipo_do_bloco==0 && agent.tipo_do_bloco_inout==0) 
-// entrada LC para BL]]></Code>
+// entrada LC para Belem]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[condition2]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[(agent.tipo_do_bloco==1 && agent.tipo_do_bloco_inout==0) 
-// entrada CB para BL]]></Code>
+// entrada CB para Belem]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[condition3]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[(agent.tipo_do_bloco==0 && agent.tipo_do_bloco_inout==1) 
-// Saida de BL LC]]></Code>
+// Saida de Belem LC]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[condition4]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[(agent.tipo_do_bloco==1 && agent.tipo_do_bloco_inout==1) 
-// Saida de BL LC]]></Code>
+// Saida de Belem LC]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -30935,7 +30945,7 @@ else{
 				</EmbeddedObject>
 				<EmbeddedObject>
 					<Id>1739208549304</Id>
-					<Name><![CDATA[PATIO_blocos_CB_BL]]></Name>
+					<Name><![CDATA[PATIO_blocos_CB_Belem]]></Name>
 					<X>450</X><Y>570</Y>
 					<Label><X>-5</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -30965,7 +30975,7 @@ else{
 						<Parameter>
 							<Name><![CDATA[entityLocation]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[node_CB_BL]]></Code>
+								<Code><![CDATA[node_CB_BELEM]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -31037,7 +31047,7 @@ else{
 				</EmbeddedObject>
 				<EmbeddedObject>
 					<Id>1739208549339</Id>
-					<Name><![CDATA[PATIO_blocos_LC_SAIDA_BL]]></Name>
+					<Name><![CDATA[PATIO_blocos_LC_SAIDA_BELEM]]></Name>
 					<X>450</X><Y>640</Y>
 					<Label><X>-5</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -31067,7 +31077,7 @@ else{
 						<Parameter>
 							<Name><![CDATA[entityLocation]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[node_LC_SAIDA_BL]]></Code>
+								<Code><![CDATA[node_LC_SAIDA_BELEM]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -31139,7 +31149,7 @@ else{
 				</EmbeddedObject>
 				<EmbeddedObject>
 					<Id>1739208549370</Id>
-					<Name><![CDATA[PATIO_blocos_CB_SAIDA_BL]]></Name>
+					<Name><![CDATA[PATIO_blocos_CB_SAIDA_BELEM]]></Name>
 					<X>450</X><Y>700</Y>
 					<Label><X>-5</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -31169,7 +31179,7 @@ else{
 						<Parameter>
 							<Name><![CDATA[entityLocation]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[node_CB_SAIDA_BL]]></Code>
+								<Code><![CDATA[node_CB_SAIDA_BELEM]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -31241,7 +31251,7 @@ else{
 				</EmbeddedObject>
 				<EmbeddedObject>
 					<Id>1739208549391</Id>
-					<Name><![CDATA[PATIO_blocos_LC_BL]]></Name>
+					<Name><![CDATA[PATIO_blocos_LC_Belem]]></Name>
 					<X>450</X><Y>500</Y>
 					<Label><X>-5</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -31271,7 +31281,7 @@ else{
 						<Parameter>
 							<Name><![CDATA[entityLocation]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[node_LC_BL]]></Code>
+								<Code><![CDATA[node_LC_BELEM]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -31369,7 +31379,7 @@ else{
 					<X>12</X><Y>-10</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[3d/warehouse.dae]]></ClassName>
 					</ResourceReference>
 					<ColorTable>
@@ -31725,7 +31735,7 @@ else{
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[LC BL]]></Text>
+					<Text><![CDATA[LC BELEM]]></Text>
 					<Font>
 						<Name>Artifakt Element Black</Name>
 						<Size>8</Size>
@@ -31747,7 +31757,7 @@ else{
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
 					<Text><![CDATA[text]]></Text>
-					<TextCode><![CDATA[PATIO_blocos_LC_SAIDA_BL.size()]]></TextCode>
+					<TextCode><![CDATA[PATIO_blocos_LC_SAIDA_BELEM.size()]]></TextCode>
 					<Font>
 						<Name>Bell MT</Name>
 						<Size>16</Size>
@@ -31768,7 +31778,7 @@ else{
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[CB BL]]></Text>
+					<Text><![CDATA[CB BELEM]]></Text>
 					<Font>
 						<Name>Artifakt Element Black</Name>
 						<Size>8</Size>
@@ -31790,7 +31800,7 @@ else{
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
 					<Text><![CDATA[text]]></Text>
-					<TextCode><![CDATA[PATIO_blocos_CB_BL.size()]]></TextCode>
+					<TextCode><![CDATA[PATIO_blocos_CB_Belem.size()]]></TextCode>
 					<Font>
 						<Name>Bell MT</Name>
 						<Size>16</Size>
@@ -31800,7 +31810,7 @@ else{
 				</Text>
 				<PointNode>
 					<Id>1739208630570</Id>
-					<Name><![CDATA[node_CB_SAIDA_BL]]></Name>
+					<Name><![CDATA[node_CB_SAIDA_BELEM]]></Name>
 					<X>380.133</X><Y>122.546</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -31874,7 +31884,7 @@ else{
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
 					<Text><![CDATA[text]]></Text>
-					<TextCode><![CDATA[PATIO_blocos_CB_SAIDA_BL.size()]]></TextCode>
+					<TextCode><![CDATA[PATIO_blocos_CB_SAIDA_BELEM.size()]]></TextCode>
 					<Font>
 						<Name>Bell MT</Name>
 						<Size>16</Size>
@@ -31884,7 +31894,7 @@ else{
 				</Text>
 				<PointNode>
 					<Id>1739208630578</Id>
-					<Name><![CDATA[node_LC_BL]]></Name>
+					<Name><![CDATA[node_LC_BELEM]]></Name>
 					<X>195.333</X><Y>57.455</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -31904,7 +31914,7 @@ else{
 				</PointNode>
 				<PointNode>
 					<Id>1739208630582</Id>
-					<Name><![CDATA[node_CB_BL]]></Name>
+					<Name><![CDATA[node_CB_BELEM]]></Name>
 					<X>195.333</X><Y>122.546</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -31924,7 +31934,7 @@ else{
 				</PointNode>
 				<PointNode>
 					<Id>1739208630584</Id>
-					<Name><![CDATA[node_LC_SAIDA_BL]]></Name>
+					<Name><![CDATA[node_LC_SAIDA_BELEM]]></Name>
 					<X>380.133</X><Y>57.455</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -31956,7 +31966,7 @@ else{
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
 					<Text><![CDATA[text]]></Text>
-					<TextCode><![CDATA[PATIO_blocos_LC_BL.size()]]></TextCode>
+					<TextCode><![CDATA[PATIO_blocos_LC_Belem.size()]]></TextCode>
 					<Font>
 						<Name>Bell MT</Name>
 						<Size>16</Size>
@@ -32409,7 +32419,7 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[AgentPatio]]></ClassName>
 					</ActiveObjectClass>
 				</ContainerLink>
@@ -32422,7 +32432,7 @@ else{
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[modelologinBL]]></PackageName>
+						<PackageName><![CDATA[modelologinBelem]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 					</ActiveObjectClass>
 				</ContainerLink>
@@ -33215,7 +33225,7 @@ else{
 				<ConnectOnStartup>true</ConnectOnStartup>
 				<DatabaseName><![CDATA[]]></DatabaseName>
 				<ResourceReference>
-					<PackageName><![CDATA[modelologinBL]]></PackageName>
+					<PackageName><![CDATA[modelologinBelem]]></PackageName>
 					<ClassName><![CDATA[login_bases.xlsx]]></ClassName>
 				</ResourceReference>
 				<Host><![CDATA[localhost]]></Host>
@@ -33225,7 +33235,7 @@ else{
 			</ExternalConnection>
 			<TableImportSettings>
 				<TableReference>
-					<PackageName><![CDATA[modelologinBL]]></PackageName>
+					<PackageName><![CDATA[modelologinBelem]]></PackageName>
 					<ClassName><![CDATA[containers_ano]]></ClassName>
 				</TableReference>
 				<ConnectionIndex>0</ConnectionIndex>
@@ -33313,7 +33323,7 @@ else{
 					<Rotation>0.0</Rotation>
 					<ImageFiles>
 						<ImageResourceReference>
-							<PackageName><![CDATA[modelologinBL]]></PackageName>
+							<PackageName><![CDATA[modelologinBelem]]></PackageName>
 							<ClassName><![CDATA[logo_login.png]]></ClassName>
 						</ImageResourceReference>
 					</ImageFiles>
@@ -33335,7 +33345,7 @@ else{
 					<Rotation>0.0</Rotation>
 					<ImageFiles>
 						<ImageResourceReference>
-							<PackageName><![CDATA[modelologinBL]]></PackageName>
+							<PackageName><![CDATA[modelologinBelem]]></PackageName>
 							<ClassName><![CDATA[logo_routelab.png]]></ClassName>
 						</ImageResourceReference>
 					</ImageFiles>
@@ -33351,10 +33361,10 @@ else{
 					<ParameterName><![CDATA[nbOpManaus]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[capacidade_CB_BL]]></ParameterName>
+					<ParameterName><![CDATA[capacidade_CB_BELEM]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[capacidade_LC_BL]]></ParameterName>
+					<ParameterName><![CDATA[capacidade_LC_BELEM]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[aguardo_proximo_comboio]]></ParameterName>
@@ -33401,9 +33411,6 @@ else{
 				<Parameter>
 					<ParameterName><![CDATA[id_berc_vessl_CB]]></ParameterName>
 				</Parameter>
-				<Parameter>
-					<ParameterName><![CDATA[Tempo_Atraso_Navio]]></ParameterName>
-				</Parameter>
 			</Parameters>
 			<PresentationProperties>
 				<EnableZoomAndPanning>true</EnableZoomAndPanning>
@@ -33417,8 +33424,8 @@ else{
 				<StopOption><![CDATA[Stop at specified time]]></StopOption>
 				<InitialDate><![CDATA[1672531200000]]></InitialDate>
 				<InitialTime><![CDATA[0.0]]></InitialTime>
-				<FinalDate><![CDATA[1768176000000]]></FinalDate>
-				<FinalTime><![CDATA[26568.0]]></FinalTime>
+				<FinalDate><![CDATA[1767560400000]]></FinalDate>
+				<FinalTime><![CDATA[26397.0]]></FinalTime>
 			</ModelTimeProperties>
 			<BypassInitialScreen>true</BypassInitialScreen>
 		</SimulationExperiment>
@@ -33510,10 +33517,6 @@ else{
 			</Parameter>
 			<Parameter>	
 				<Id>1739470451817</Id>
-				<Type>FIXED</Type>
-			</Parameter>
-			<Parameter>	
-				<Id>1739910010631</Id>
 				<Type>FIXED</Type>
 			</Parameter>
 			<ObjectiveFunctionCode><![CDATA[root.retorna_operacao_Navio.count()]]></ObjectiveFunctionCode>
@@ -33620,9 +33623,6 @@ else{
 			<FreeformParamValue>	
 				<Id>1739470451817</Id>
 			</FreeformParamValue>
-			<FreeformParamValue>	
-				<Id>1739910010631</Id>
-			</FreeformParamValue>
 			<RangeVariationParamValue>	
 				<Id>1735584419399</Id>
 				<Type>FIXED</Type>
@@ -33703,10 +33703,6 @@ else{
 			</RangeVariationParamValue>
 			<RangeVariationParamValue>	
 				<Id>1739470451817</Id>
-				<Type>FIXED</Type>
-			</RangeVariationParamValue>
-			<RangeVariationParamValue>	
-				<Id>1739910010631</Id>
 				<Type>FIXED</Type>
 			</RangeVariationParamValue>
 			<ModelTimeProperties>
